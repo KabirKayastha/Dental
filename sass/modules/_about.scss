@@ -1,0 +1,59 @@
+.about {
+  margin-top: 30px;
+  padding: $section-padding;
+  //   background-color: #aaa;
+  display: grid;
+  grid-template-columns: 1fr 30px 1fr;
+  align-items: center;
+
+  .about-img {
+    grid-column: 1/2;
+
+    img {
+      border-radius: 5px;
+    }
+  }
+
+  .about-desc-container {
+    grid-column: 3/4;
+
+    .about-heading {
+      @include montserratMedium;
+      font-size: 38px;
+      display: inline-block;
+      width: 425px;
+      margin-bottom: 15px;
+      text-transform: capitalize;
+    }
+
+    p {
+      padding: 15px 0;
+      //   em {
+      //     margin: 15px 0;
+      //   }
+    }
+
+    .p1 {
+      font-size: 20px;
+      color: $primary-color;
+    }
+
+    .p2 {
+      font-size: 18px;
+      //   @include nunitoLight;
+    }
+
+    .button-container {
+      margin: 15px 0;
+
+      .secondary-button a::after {
+        // content: "\f0e0";
+        content: "\f061";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 700;
+        font-size: 24px;
+        margin: 5px 0 0 5px;
+      }
+    }
+  }
+}

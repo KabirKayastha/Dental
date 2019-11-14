@@ -1,0 +1,37 @@
+//fonts
+@mixin nunito($fontWeight) {
+  font-family: "Nunito", sans-serif;
+  font-weight: $fontWeight;
+}
+@mixin nunitoReg {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+}
+@mixin nunitoBold {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+}
+@mixin nunitoLight {
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+}
+@mixin montserrat($fontWeight) {
+  font-family: "Montserrat", sans-serif;
+  font-weight: $fontWeight;
+}
+@mixin montserratReg {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+@mixin montserratMedium {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+@mixin montserratBold {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+@mixin robotoBlack {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+}

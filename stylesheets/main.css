@@ -1,0 +1,425 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Nunito:300,400,400i,700|Roboto:900&display=swap");
+/* line 1, ../sass/base/_base.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* line 7, ../sass/base/_base.scss */
+html {
+  scroll-behavior: smooth;
+}
+
+/* line 11, ../sass/base/_base.scss */
+body {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+/* line 16, ../sass/base/_base.scss */
+ul {
+  list-style-type: none;
+}
+
+/* line 20, ../sass/base/_base.scss */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+/* line 28, ../sass/base/_base.scss */
+a {
+  text-decoration: none;
+  color: #000;
+}
+/* line 32, ../sass/base/_base.scss */
+a:hover {
+  text-decoration: none;
+  color: #804097;
+}
+
+/* line 38, ../sass/base/_base.scss */
+button {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  outline: transparent;
+}
+
+/* line 44, ../sass/base/_base.scss */
+.primary-button {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  padding: 12px 25px;
+  background-color: #804097;
+  text-transform: capitalize;
+  border-radius: 5px;
+  color: #fff;
+}
+/* line 55, ../sass/base/_base.scss */
+.primary-button a {
+  color: #fff;
+}
+/* line 59, ../sass/base/_base.scss */
+.primary-button:hover {
+  background-color: #623173;
+  color: #fff;
+}
+
+/* line 65, ../sass/base/_base.scss */
+.secondary-button {
+  padding: 10px 15px;
+  background-color: transparent;
+  border: 2px solid #804097;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 5px;
+  color: #804097;
+  cursor: pointer;
+}
+/* line 75, ../sass/base/_base.scss */
+.secondary-button a {
+  color: #804097;
+}
+/* line 79, ../sass/base/_base.scss */
+.secondary-button:hover {
+  background-color: #623173;
+  border-color: #623173;
+  color: #fff;
+}
+/* line 84, ../sass/base/_base.scss */
+.secondary-button:hover a {
+  color: #fff;
+}
+
+/* line 90, ../sass/base/_base.scss */
+.section-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+
+/* line 98, ../sass/base/_base.scss */
+.section-desc {
+  padding: 15px;
+  text-align: center;
+  width: 75%;
+  margin: 0 auto;
+}
+
+/* line 1, ../sass/modules/_header.scss */
+header {
+  position: fixed;
+  top: 0;
+  z-index: 99999;
+  width: 100%;
+  background-color: rgba(238, 238, 238, 0.8);
+}
+/* line 10, ../sass/modules/_header.scss */
+header .top-header {
+  padding: 0 60px;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 18, ../sass/modules/_header.scss */
+header .top-header .header-contact,
+header .top-header .header-socials {
+  display: flex;
+}
+/* line 22, ../sass/modules/_header.scss */
+header .top-header .header-contact li,
+header .top-header .header-socials li {
+  padding: 0 5px;
+}
+/* line 25, ../sass/modules/_header.scss */
+header .top-header .header-contact li span,
+header .top-header .header-socials li span {
+  color: #777;
+}
+/* line 31, ../sass/modules/_header.scss */
+header .top-header .header-contact {
+  justify-content: space-between;
+  width: 60%;
+}
+/* line 36, ../sass/modules/_header.scss */
+header .top-header .header-contact li span::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  color: #804097;
+  margin-right: 5px;
+}
+/* line 42, ../sass/modules/_header.scss */
+header .top-header .header-contact li span.header-mail::before {
+  content: "\f0e0";
+}
+/* line 45, ../sass/modules/_header.scss */
+header .top-header .header-contact li span.header-phone::before {
+  content: "\f879";
+}
+/* line 48, ../sass/modules/_header.scss */
+header .top-header .header-contact li span.header-location::before {
+  content: "\f3c5";
+}
+/* line 56, ../sass/modules/_header.scss */
+header .top-header .header-socials li {
+  padding: 0 10px;
+}
+/* line 58, ../sass/modules/_header.scss */
+header .top-header .header-socials li i {
+  font-size: 22px;
+  color: #777;
+}
+/* line 62, ../sass/modules/_header.scss */
+header .top-header .header-socials li i.fa-facebook:hover {
+  color: #3b5998;
+}
+/* line 66, ../sass/modules/_header.scss */
+header .top-header .header-socials li i.fa-twitter:hover {
+  color: #00acee;
+}
+/* line 70, ../sass/modules/_header.scss */
+header .top-header .header-socials li i.fa-instagram:hover {
+  color: #333;
+}
+/* line 74, ../sass/modules/_header.scss */
+header .top-header .header-socials li i.fa-linkedin:hover {
+  color: #0e76a8;
+}
+/* line 82, ../sass/modules/_header.scss */
+header nav {
+  display: flex;
+  align-items: center;
+  padding: 5px 60px;
+  justify-content: space-between;
+}
+/* line 90, ../sass/modules/_header.scss */
+header nav .logo-container img {
+  max-height: 70px;
+  height: 50px;
+}
+/* line 96, ../sass/modules/_header.scss */
+header nav .nav-items {
+  display: flex;
+  justify-content: space-between;
+}
+/* line 99, ../sass/modules/_header.scss */
+header nav .nav-items li {
+  text-transform: uppercase;
+  padding: 0 20px;
+}
+
+/* line 1, ../sass/modules/_banner.scss */
+.banner {
+  height: 100vh;
+  width: 100%;
+  max-height: 100vh;
+  min-height: 100vh;
+  position: relative;
+}
+/* line 9, ../sass/modules/_banner.scss */
+.banner .banner-img {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+/* line 16, ../sass/modules/_banner.scss */
+.banner .slogan-container {
+  position: absolute;
+  top: 55%;
+  left: 10%;
+  z-index: 1;
+  backdrop-filter: blur(7px) brightness(110%);
+  width: 550px;
+  padding: 25px 30px;
+  transform: translateY(-50%);
+  border-radius: 4px;
+}
+/* line 27, ../sass/modules/_banner.scss */
+.banner .slogan-container .banner-slogan {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 60px;
+  margin-bottom: 20px;
+  color: #fff;
+  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.26);
+}
+/* line 36, ../sass/modules/_banner.scss */
+.banner .button-container {
+  position: absolute;
+  bottom: 20px;
+  right: 60px;
+  z-index: 1;
+}
+/* line 42, ../sass/modules/_banner.scss */
+.banner .button-container button {
+  height: 60px;
+  width: 60px;
+  background-color: rgba(128, 64, 151, 0.5);
+  border: 4px solid #804097;
+  border-radius: 50%;
+  margin: 0 5px;
+  padding: 15px;
+  cursor: pointer;
+}
+/* line 52, ../sass/modules/_banner.scss */
+.banner .button-container button img {
+  height: 100%;
+  width: 100%;
+}
+/* line 57, ../sass/modules/_banner.scss */
+.banner .button-container button:hover {
+  background-color: #804097;
+}
+
+/* line 1, ../sass/modules/_about.scss */
+.about {
+  margin-top: 30px;
+  padding: 30px 60px;
+  display: grid;
+  grid-template-columns: 1fr 30px 1fr;
+  align-items: center;
+}
+/* line 9, ../sass/modules/_about.scss */
+.about .about-img {
+  grid-column: 1/2;
+}
+/* line 12, ../sass/modules/_about.scss */
+.about .about-img img {
+  border-radius: 5px;
+}
+/* line 17, ../sass/modules/_about.scss */
+.about .about-desc-container {
+  grid-column: 3/4;
+}
+/* line 20, ../sass/modules/_about.scss */
+.about .about-desc-container .about-heading {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 38px;
+  display: inline-block;
+  width: 425px;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+/* line 29, ../sass/modules/_about.scss */
+.about .about-desc-container p {
+  padding: 15px 0;
+}
+/* line 36, ../sass/modules/_about.scss */
+.about .about-desc-container .p1 {
+  font-size: 20px;
+  color: #804097;
+}
+/* line 41, ../sass/modules/_about.scss */
+.about .about-desc-container .p2 {
+  font-size: 18px;
+}
+/* line 46, ../sass/modules/_about.scss */
+.about .about-desc-container .button-container {
+  margin: 15px 0;
+}
+/* line 49, ../sass/modules/_about.scss */
+.about .about-desc-container .button-container .secondary-button a::after {
+  content: "\f061";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  font-size: 24px;
+  margin: 5px 0 0 5px;
+}
+
+/* line 1, ../sass/modules/_services.scss */
+.services, .doctors {
+  padding: 30px 60px;
+}
+/* line 4, ../sass/modules/_services.scss */
+.services .grid-wrapper, .doctors .grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  justify-content: space-between;
+  margin: 25px 0 40px 0;
+}
+/* line 10, ../sass/modules/_services.scss */
+.services .grid-wrapper .grid-card, .doctors .grid-wrapper .grid-card {
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+/* line 15, ../sass/modules/_services.scss */
+.services .grid-wrapper .grid-card .grid-img-container, .doctors .grid-wrapper .grid-card .grid-img-container {
+  height: 300px;
+  width: 250px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+/* line 22, ../sass/modules/_services.scss */
+.services .grid-wrapper .grid-card .grid-img-container img, .doctors .grid-wrapper .grid-card .grid-img-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+/* line 30, ../sass/modules/_services.scss */
+.services .grid-wrapper .grid-card .grid-card-label, .doctors .grid-wrapper .grid-card .grid-card-label {
+  font-weight: 700;
+}
+/* line 34, ../sass/modules/_services.scss */
+.services .grid-wrapper .grid-card:hover, .doctors .grid-wrapper .grid-card:hover {
+  transform: translateY(-10px);
+}
+/* line 40, ../sass/modules/_services.scss */
+.services .button-container, .doctors .button-container {
+  text-align: center;
+}
+/* line 43, ../sass/modules/_services.scss */
+.services .button-container .secondary-button a::after, .doctors .button-container .secondary-button a::after {
+  content: "\f061";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  font-size: 24px;
+  margin: 5px 0 0 5px;
+}
+
+/* line 5, ../sass/modules/_doctors.scss */
+.doctors .grid-wrapper .grid-card .grid-img-container {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+}
+/* line 10, ../sass/modules/_doctors.scss */
+.doctors .grid-wrapper .grid-card .grid-img-container img {
+  transition: transform 0.5s ease-in-out;
+}
+/* line 15, ../sass/modules/_doctors.scss */
+.doctors .grid-wrapper .grid-card:hover {
+  transform: translateY(0px);
+}
+/* line 18, ../sass/modules/_doctors.scss */
+.doctors .grid-wrapper .grid-card:hover img {
+  transform: scale(1.2);
+}
+/* line 24, ../sass/modules/_doctors.scss */
+.doctors .grid-wrapper .grid-card .grid-card-label .doctor-name {
+  font-size: 22px;
+}
+/* line 28, ../sass/modules/_doctors.scss */
+.doctors .grid-wrapper .grid-card .grid-card-label .doctor-post {
+  font-weight: 300;
+  font-size: 16px;
+  color: #804097;
+}

@@ -1,0 +1,52 @@
+.services {
+  padding: $section-padding;
+
+  .grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    justify-content: space-between;
+    margin: 25px 0 40px 0;
+
+    .grid-card {
+      //   background-color: blue;
+      text-align: center;
+      transition: transform 0.3s ease-in-out;
+
+      .grid-img-container {
+        height: 300px;
+        width: 250px;
+        border-radius: 5px;
+        overflow: hidden;
+        margin-bottom: 10px;
+
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+
+      .grid-card-label {
+        font-weight: 700;
+      }
+
+      &:hover {
+        transform: translateY(-10px);
+      }
+    }
+  }
+
+  .button-container {
+    text-align: center;
+
+    .secondary-button a::after {
+      // content: "\f0e0";
+      content: "\f061";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 700;
+      font-size: 24px;
+      margin: 5px 0 0 5px;
+    }
+  }
+}
