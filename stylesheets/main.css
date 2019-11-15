@@ -344,23 +344,23 @@ header nav .nav-items li {
 }
 
 /* line 1, ../sass/modules/_services.scss */
-.services, .doctors {
+.services {
   padding: 30px 60px;
 }
 /* line 4, ../sass/modules/_services.scss */
-.services .grid-wrapper, .doctors .grid-wrapper {
+.services .grid-wrapper {
   display: grid;
   grid-template-columns: repeat(4, 250px);
   justify-content: space-between;
   margin: 25px 0 40px 0;
 }
 /* line 10, ../sass/modules/_services.scss */
-.services .grid-wrapper .grid-card, .doctors .grid-wrapper .grid-card {
+.services .grid-wrapper .grid-card {
   text-align: center;
   transition: transform 0.3s ease-in-out;
 }
 /* line 15, ../sass/modules/_services.scss */
-.services .grid-wrapper .grid-card .grid-img-container, .doctors .grid-wrapper .grid-card .grid-img-container {
+.services .grid-wrapper .grid-card .grid-img-container {
   height: 300px;
   width: 250px;
   border-radius: 5px;
@@ -368,26 +368,26 @@ header nav .nav-items li {
   margin-bottom: 10px;
 }
 /* line 22, ../sass/modules/_services.scss */
-.services .grid-wrapper .grid-card .grid-img-container img, .doctors .grid-wrapper .grid-card .grid-img-container img {
+.services .grid-wrapper .grid-card .grid-img-container img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   object-position: center;
 }
 /* line 30, ../sass/modules/_services.scss */
-.services .grid-wrapper .grid-card .grid-card-label, .doctors .grid-wrapper .grid-card .grid-card-label {
+.services .grid-wrapper .grid-card .grid-card-label {
   font-weight: 700;
 }
 /* line 34, ../sass/modules/_services.scss */
-.services .grid-wrapper .grid-card:hover, .doctors .grid-wrapper .grid-card:hover {
+.services .grid-wrapper .grid-card:hover {
   transform: translateY(-10px);
 }
 /* line 40, ../sass/modules/_services.scss */
-.services .button-container, .doctors .button-container {
+.services .button-container {
   text-align: center;
 }
 /* line 43, ../sass/modules/_services.scss */
-.services .button-container .secondary-button a::after, .doctors .button-container .secondary-button a::after {
+.services .button-container .secondary-button a::after {
   content: "\f061";
   font-family: "Font Awesome 5 Free";
   font-weight: 700;
@@ -395,31 +395,144 @@ header nav .nav-items li {
   margin: 5px 0 0 5px;
 }
 
+/* line 1, ../sass/modules/_doctors.scss */
+.doctors {
+  padding: 30px 60px;
+  text-align: center;
+}
 /* line 5, ../sass/modules/_doctors.scss */
+.doctors .grid-wrapper {
+  width: 100%;
+}
+/* line 9, ../sass/modules/_doctors.scss */
+.doctors .grid-wrapper .grid-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+/* line 16, ../sass/modules/_doctors.scss */
 .doctors .grid-wrapper .grid-card .grid-img-container {
   height: 250px;
   width: 250px;
   border-radius: 50%;
+  overflow: hidden;
 }
-/* line 10, ../sass/modules/_doctors.scss */
+/* line 22, ../sass/modules/_doctors.scss */
 .doctors .grid-wrapper .grid-card .grid-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
   transition: transform 0.5s ease-in-out;
 }
-/* line 15, ../sass/modules/_doctors.scss */
+/* line 31, ../sass/modules/_doctors.scss */
 .doctors .grid-wrapper .grid-card:hover {
   transform: translateY(0px);
 }
-/* line 18, ../sass/modules/_doctors.scss */
+/* line 34, ../sass/modules/_doctors.scss */
 .doctors .grid-wrapper .grid-card:hover img {
-  transform: scale(1.2);
+  transform: scale(1.09);
 }
-/* line 24, ../sass/modules/_doctors.scss */
+/* line 40, ../sass/modules/_doctors.scss */
 .doctors .grid-wrapper .grid-card .grid-card-label .doctor-name {
   font-size: 22px;
 }
-/* line 28, ../sass/modules/_doctors.scss */
+/* line 44, ../sass/modules/_doctors.scss */
 .doctors .grid-wrapper .grid-card .grid-card-label .doctor-post {
   font-weight: 300;
   font-size: 16px;
   color: #804097;
+}
+/* line 53, ../sass/modules/_doctors.scss */
+.doctors .button-container button {
+  width: 40px;
+  height: 40px;
+  background: #804097;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  margin: 0 3px;
+}
+/* line 62, ../sass/modules/_doctors.scss */
+.doctors .button-container button:hover {
+  background-color: #623173;
+}
+
+/* line 1, ../sass/modules/_testimonials.scss */
+.testimonials {
+  padding: 30px 60px;
+  text-align: center;
+}
+/* line 5, ../sass/modules/_testimonials.scss */
+.testimonials .wrapper {
+  margin: 40px auto 30px auto;
+  width: 60%;
+}
+/* line 11, ../sass/modules/_testimonials.scss */
+.testimonials .wrapper .content {
+  margin: 15px 0;
+}
+/* line 14, ../sass/modules/_testimonials.scss */
+.testimonials .wrapper .content::before {
+  content: "\f10d";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  font-size: 48px;
+  color: rgba(128, 64, 151, 0.5);
+}
+/* line 25, ../sass/modules/_testimonials.scss */
+.testimonials .wrapper p {
+  margin: 15px 0;
+  line-height: 30px;
+  font-size: 20px;
+}
+/* line 31, ../sass/modules/_testimonials.scss */
+.testimonials .wrapper .name {
+  color: #804097;
+}
+/* line 34, ../sass/modules/_testimonials.scss */
+.testimonials .wrapper .name::before {
+  content: "-";
+  margin: 0 3px;
+  font-weight: 700;
+  font-size: 22px;
+  color: #804097;
+}
+/* line 44, ../sass/modules/_testimonials.scss */
+.testimonials .profile {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0px auto;
+}
+/* line 51, ../sass/modules/_testimonials.scss */
+.testimonials .profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+/* line 59, ../sass/modules/_testimonials.scss */
+.testimonials .owl-custom-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 65, ../sass/modules/_testimonials.scss */
+.testimonials .owl-dot {
+  margin: 0 3px;
+  height: 15px;
+  width: 15px;
+  background-color: rgba(128, 64, 151, 0.3);
+  cursor: pointer;
+  border-radius: 50%;
+}
+/* line 74, ../sass/modules/_testimonials.scss */
+.testimonials .owl-dot.active {
+  height: 20px;
+  width: 20px;
+  background-color: #804097;
 }

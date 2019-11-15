@@ -24,7 +24,16 @@
       integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./stylesheets/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+      integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU="
+      crossorigin="anonymous" 
+    />
+    <link
+      rel="stylesheet"
+      href="./stylesheets/main.css"
+    />
   </head>
 
   <body>
@@ -240,7 +249,7 @@
         prevent, diagnose, and solve common dental problems.
       </p>
 
-      <div class="grid-wrapper">
+      <div class="grid-wrapper owl-carousel owl-theme">
         <div class="grid-card doctor-card">
           <div class="img-container grid-img-container">
             <img
@@ -298,6 +307,24 @@
         <div class="grid-card doctor-card">
           <div class="img-container grid-img-container">
             <img
+              src="./images/banner-img-2.jpg"
+              alt="service-img"
+              class="grid-img"
+            />
+          </div>
+          <a href="#" class="grid-card-label">
+            <h4 class="doctor-name">
+                Sally Watkins
+            </h4>
+            <h5 class="doctor-post">
+              Assistant Dentist
+            </h5>
+          </a>
+        </div>
+
+        <div class="grid-card doctor-card">
+          <div class="img-container grid-img-container">
+            <img
               src="./images/doctor-img-4.jpg"
               alt="service-img"
               class="grid-img"
@@ -314,15 +341,100 @@
         </div>
       </div>
 
+      
       <div class="button-container">
-        <button class="secondary-button">
-          <a href="#">
-            Meet all
-          </a>
+        <button class="carousel-button carousel-prev">
+          <img src="./images/icons/angle-left.png" alt="angle-left" />
+        </button>
+        <button class="carousel-button carousel-next">
+          <img src="./images/icons/angle-right.png" alt="angle-right" />
         </button>
       </div>
     </section>
     <!-- /doctors -->
+
+    <!-- testimonials -->
+    <div class="testimonials">
+      <h3 class="section-title">What our clients say?</h3>
+      
+      <div class="owl-carousel owl-theme">
+        <div class="wrapper">
+          <div class="profile">
+            <img src="./images/testimonial-img-1.jpg" alt="pic">
+          </div>
+          
+          <div class="content">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur
+              adipisicing elit. Quia in rem omnis ea
+              fugiat? Nam aperiam distinctio ex doloribus 
+              fugiat dolorum eum reiciendis expedita quae.
+            </p>
+          </div>
+
+          <h4 class="name"> <em>Sally Smith</em></h4>
+        </div>
+
+        <div class="wrapper">
+          <div class="profile">
+            <img src="./images/testimonial-img-2.jpg" alt="pic">
+          </div>
+          
+          <div class="content">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur
+              adipisicing elit. Quia in rem omnis ea
+              fugiat? Nam aperiam distinctio ex doloribus 
+              fugiat dolorum eum reiciendis expedita quae.
+            </p>
+          </div>
+
+          <h4 class="name"> <em>Sally Smith</em></h4>
+        </div>
+
+        <div class="wrapper">
+          <div class="profile">
+            <img src="./images/testimonial-img-3.jpg" alt="pic">
+          </div>
+          
+          <div class="content">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur
+              adipisicing elit. Quia in rem omnis ea
+              fugiat? Nam aperiam distinctio ex doloribus 
+              fugiat dolorum eum reiciendis expedita quae.
+            </p>
+          </div>
+
+          <h4 class="name"> <em>Sally Smith</em></h4>
+        </div>
+
+        <div class="wrapper">
+          <div class="profile">
+            <img src="./images/testimonial-img-4.jpg" alt="pic">
+          </div>
+          
+          <div class="content">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur
+              adipisicing elit. Quia in rem omnis ea
+              fugiat? Nam aperiam distinctio ex doloribus 
+              fugiat dolorum eum reiciendis expedita quae.
+            </p>
+          </div>
+
+          <h4 class="name"> <em>Sally Smith</em></h4>
+        </div>
+      </div>
+
+      <ul id='carousel-custom-dots' class='owl-custom-dots'> 
+        <li class='owl-dot active'></li> 
+        <li class='owl-dot'></li> 
+        <li class='owl-dot'></li> 
+        <li class='owl-dot'></li> 
+      </ul>
+    </div>
+    <!-- /testimonials -->
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
