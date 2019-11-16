@@ -102,6 +102,11 @@ button {
 }
 
 /* line 90, ../sass/base/_base.scss */
+section:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+/* line 94, ../sass/base/_base.scss */
 .section-title {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -111,9 +116,9 @@ button {
   margin-bottom: 15px;
 }
 
-/* line 98, ../sass/base/_base.scss */
+/* line 102, ../sass/base/_base.scss */
 .section-desc {
-  padding: 15px;
+  padding: 15px 0 30px 0;
   text-align: center;
   width: 75%;
   margin: 0 auto;
@@ -535,4 +540,129 @@ header nav .nav-items li {
   height: 20px;
   width: 20px;
   background-color: #804097;
+}
+
+/* line 1, ../sass/modules/_contact.scss */
+.contact {
+  padding: 30px 60px;
+}
+/* line 4, ../sass/modules/_contact.scss */
+.contact .wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0 50px;
+  justify-items: center;
+}
+/* line 10, ../sass/modules/_contact.scss */
+.contact .wrapper .contact-form {
+  grid-column: 3/4;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 75%;
+}
+/* line 17, ../sass/modules/_contact.scss */
+.contact .wrapper .contact-form .input-grp {
+  width: calc(50% - 15px);
+  margin-bottom: 20px;
+  position: relative;
+}
+/* line 22, ../sass/modules/_contact.scss */
+.contact .wrapper .contact-form .input-grp label,
+.contact .wrapper .contact-form .input-grp input {
+  display: block;
+}
+/* line 27, ../sass/modules/_contact.scss */
+.contact .wrapper .contact-form .input-grp input,
+.contact .wrapper .contact-form .input-grp textarea {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  margin-top: 5px;
+  width: 100%;
+  height: 45px;
+  padding: 0 10px;
+  font-size: 18px;
+  border: 1px solid #804097;
+  border-radius: 3px;
+  background: transparent;
+}
+/* line 39, ../sass/modules/_contact.scss */
+.contact .wrapper .contact-form .input-grp.textarea {
+  width: 100%;
+}
+/* line 42, ../sass/modules/_contact.scss */
+.contact .wrapper .contact-form .input-grp.textarea textarea {
+  height: 150px;
+  resize: none;
+  padding: 10px;
+}
+/* line 49, ../sass/modules/_contact.scss */
+.contact .wrapper .contact-form .input-grp span {
+  width: 100%;
+  height: 45px;
+}
+/* line 53, ../sass/modules/_contact.scss */
+.contact .wrapper .contact-form .input-grp span input {
+  padding-right: 35px;
+}
+/* line 57, ../sass/modules/_contact.scss */
+.contact .wrapper .contact-form .input-grp span:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  color: #804097;
+  font-size: 20px;
+  position: absolute;
+  top: calc(50% + 3px);
+  right: 10px;
+}
+/* line 67, ../sass/modules/_contact.scss */
+.contact .wrapper .contact-form .input-grp span.first-name::after, .contact .wrapper .contact-form .input-grp span.last-name::after {
+  content: "\f007";
+}
+/* line 72, ../sass/modules/_contact.scss */
+.contact .wrapper .contact-form .input-grp span.email::after {
+  content: "\f0e0";
+  font-family: "Font Awesome 5 Free";
+}
+/* line 76, ../sass/modules/_contact.scss */
+.contact .wrapper .contact-form .input-grp span.contact-no::after {
+  content: "\f095";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+}
+/* line 84, ../sass/modules/_contact.scss */
+.contact .wrapper .contact-form .button-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 90, ../sass/modules/_contact.scss */
+.contact .wrapper .contact-form .button-container button {
+  width: 30%;
+  padding: 10px 0;
+}
+/* line 95, ../sass/modules/_contact.scss */
+.contact .wrapper .contact-form .button-container a {
+  color: #804097;
+}
+/* line 98, ../sass/modules/_contact.scss */
+.contact .wrapper .contact-form .button-container a:hover {
+  color: #623173;
+}
+/* line 101, ../sass/modules/_contact.scss */
+.contact .wrapper .contact-form .button-container a:hover::after {
+  margin: 0 0 0 10px;
+}
+/* line 106, ../sass/modules/_contact.scss */
+.contact .wrapper .contact-form .button-container a:after {
+  content: "\f061";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  margin: 0 5px;
+  transition: margin 0.3s ease-in-out;
+}
+/* line 117, ../sass/modules/_contact.scss */
+.contact .wrapper .contact-info {
+  background-color: #eee;
 }
