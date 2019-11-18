@@ -666,3 +666,148 @@ header nav .nav-items li {
 .contact .wrapper .contact-info {
   background-color: #eee;
 }
+
+/* line 1, ../sass/modules/_footer.scss */
+footer {
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  margin-top: 30px;
+  background-color: #35366a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+/* line 14, ../sass/modules/_footer.scss */
+footer a {
+  color: #fff;
+}
+/* line 16, ../sass/modules/_footer.scss */
+footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+/* line 22, ../sass/modules/_footer.scss */
+footer .page-nav {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  margin-bottom: 30px;
+  width: 60%;
+}
+/* line 31, ../sass/modules/_footer.scss */
+footer .page-nav li {
+  padding: 0 15px;
+  text-transform: capitalize;
+}
+/* line 37, ../sass/modules/_footer.scss */
+footer .info-footer {
+  padding-bottom: 30px;
+}
+/* line 40, ../sass/modules/_footer.scss */
+footer .info-footer .company-name {
+  font-size: 22px;
+}
+/* line 42, ../sass/modules/_footer.scss */
+footer .info-footer .company-name:hover {
+  text-decoration: none;
+}
+/* line 47, ../sass/modules/_footer.scss */
+footer .info-footer .contact-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0;
+}
+/* line 53, ../sass/modules/_footer.scss */
+footer .info-footer .contact-footer li {
+  padding: 0 15px;
+  font-size: 16px;
+}
+/* line 57, ../sass/modules/_footer.scss */
+footer .info-footer .contact-footer li:last-child, footer .info-footer .contact-footer li:nth-child(2) {
+  border-left: 1px solid #fff;
+}
+/* line 62, ../sass/modules/_footer.scss */
+footer .info-footer .contact-footer li:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  font-size: 14px;
+  margin-right: 7px;
+}
+/* line 69, ../sass/modules/_footer.scss */
+footer .info-footer .contact-footer li.footer-email:before {
+  content: "\f0e0";
+}
+/* line 73, ../sass/modules/_footer.scss */
+footer .info-footer .contact-footer li.footer-phone:before {
+  content: "\f879";
+}
+/* line 77, ../sass/modules/_footer.scss */
+footer .info-footer .contact-footer li.footer-location:before {
+  content: "\f3c5";
+}
+/* line 83, ../sass/modules/_footer.scss */
+footer .info-footer .opening-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0;
+}
+/* line 89, ../sass/modules/_footer.scss */
+footer .info-footer .opening-info .footer-opening-hrs {
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  margin-right: 15px;
+}
+/* line 94, ../sass/modules/_footer.scss */
+footer .info-footer .opening-info .opening-time {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+}
+/* line 98, ../sass/modules/_footer.scss */
+footer .info-footer .opening-info .opening-time span {
+  padding: 0 5px;
+}
+/* line 104, ../sass/modules/_footer.scss */
+footer .info-footer .footer-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+  width: auto;
+  margin-right: 7px;
+}
+/* line 111, ../sass/modules/_footer.scss */
+footer .info-footer .footer-socials li {
+  padding: 0 10px;
+}
+/* line 117, ../sass/modules/_footer.scss */
+footer .info-footer .footer-socials li i.fa-facebook:hover {
+  color: #3b5998;
+}
+/* line 121, ../sass/modules/_footer.scss */
+footer .info-footer .footer-socials li i.fa-twitter:hover {
+  color: #00acee;
+}
+/* line 125, ../sass/modules/_footer.scss */
+footer .info-footer .footer-socials li i.fa-instagram:hover {
+  color: #333;
+}
+/* line 129, ../sass/modules/_footer.scss */
+footer .info-footer .footer-socials li i.fa-linkedin:hover {
+  color: #0e76a8;
+}
+/* line 137, ../sass/modules/_footer.scss */
+footer .copy-right {
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  background: #242548;
+  font-size: 14px;
+}

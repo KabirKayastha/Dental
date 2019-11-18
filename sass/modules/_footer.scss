@@ -1,0 +1,144 @@
+footer {
+  @include nunitoLight;
+  margin-top: 30px;
+  //   padding: 0 60px;
+  background-color: $secondary-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  //   grid-template-columns: 1fr 1fr 1fr;
+  color: $text-light;
+  text-align: center;
+
+  a {
+    color: $text-light;
+    &:hover {
+      color: $text-light;
+      text-decoration: underline;
+    }
+  }
+
+  .page-nav {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    padding: 15px 0;
+    border-bottom: 1px solid transparentize(#fff, $amount: 0.6);
+    margin-bottom: 30px;
+    width: 60%;
+
+    li {
+      padding: 0 15px;
+      text-transform: capitalize;
+    }
+  }
+
+  .info-footer {
+    padding-bottom: 30px;
+
+    .company-name {
+      font-size: 22px;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    .contact-footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 5px 0;
+
+      li {
+        padding: 0 15px;
+        font-size: 16px;
+
+        &:last-child,
+        &:nth-child(2) {
+          border-left: 1px solid #fff;
+        }
+
+        &:before {
+          font-family: "Font Awesome 5 Free";
+          font-weight: 700;
+          font-size: 14px;
+          margin-right: 7px;
+        }
+
+        &.footer-email:before {
+          content: "\f0e0";
+        }
+
+        &.footer-phone:before {
+          content: "\f879";
+        }
+
+        &.footer-location:before {
+          content: "\f3c5";
+        }
+      }
+    }
+
+    .opening-info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 5px 0;
+
+      .footer-opening-hrs {
+        @include nunitoLight;
+        margin-right: 15px;
+      }
+
+      .opening-time {
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 0.7px;
+        span {
+          padding: 0 5px;
+        }
+      }
+    }
+
+    .footer-socials {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 15px 0;
+      width: auto;
+      margin-right: 7px;
+      li {
+        padding: 0 10px;
+        i {
+          //   font-size: 22px;
+          //   color: $text-gray;
+
+          &.fa-facebook:hover {
+            color: #3b5998;
+          }
+
+          &.fa-twitter:hover {
+            color: #00acee;
+          }
+
+          &.fa-instagram:hover {
+            color: #333;
+          }
+
+          &.fa-linkedin:hover {
+            color: #0e76a8;
+          }
+        }
+      }
+    }
+  }
+
+  .copy-right {
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    background: darken($secondary-color, $amount: 10);
+    font-size: 14px;
+  }
+}
