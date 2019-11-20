@@ -4,11 +4,11 @@ bannerCarousel.owlCarousel({
   nav: false,
   dots: false,
   autoWidth: false,
-  autoplay: false,
+  autoplay: true,
   autoplayTimeout: 5000,
   smartSpeed: 1000,
   fluidSpeed: 1000,
-  //   autoplayHoverPause: true,
+  // autoplayHoverPause: true,
   responsive: {
     0: {
       items: 1
@@ -66,6 +66,8 @@ testimonialsCarousel.owlCarousel({
   loop: true,
   nav: false,
   dots: false,
+  mouseDrag: false,
+  touchDrag: false,
   animateIn: "slideInRight",
   animateOut: "fadeOutLeft",
   autoWidth: false,
