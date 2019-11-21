@@ -8,6 +8,7 @@ bannerCarousel.owlCarousel({
   autoplayTimeout: 5000,
   smartSpeed: 1000,
   fluidSpeed: 1000,
+  lazyLoad: true,
   // autoplayHoverPause: true,
   responsive: {
     0: {
@@ -35,13 +36,14 @@ doctorsCarousel.owlCarousel({
   autoplayTimeout: 5000,
   smartSpeed: 1000,
   fluidSpeed: 1000,
+  lazyLoad: true,
   //   autoplayHoverPause: true,
   responsive: {
     0: {
       items: 1
     },
     300: {
-      items: 2
+      items: 1
     },
     1000: {
       items: 3
@@ -63,16 +65,20 @@ $(".doctors .carousel-prev").click(function() {
 
 var testimonialsCarousel = $(".testimonials .owl-carousel");
 testimonialsCarousel.owlCarousel({
-  loop: true,
+  loop: false,
+  rewind: true,
   nav: false,
   dots: false,
-  mouseDrag: false,
-  touchDrag: false,
+  // mouseDrag: false,
+  // touchDrag: false,
   animateIn: "slideInRight",
   animateOut: "fadeOutLeft",
   autoWidth: false,
   smartSpeed: 1000,
   fluidSpeed: 1000,
+  autoplay: true,
+  autoplayTimeout: 10000,
+  lazyLoad: true,
   responsive: {
     0: {
       items: 1
@@ -84,4 +90,12 @@ $(".testimonials .owl-dot").click(function() {
   testimonialsCarousel.trigger("to.owl.carousel", [$(this).index()]);
   $(".owl-dot").removeClass("active");
   $(this).addClass("active");
+});
+
+testimonialsCarousel.on("changed.owl.carousel", function(event) {
+  var currentItemIndex = event.item.index;
+  var dots = $(".owl-dot");
+  dots.removeClass("active");
+  dots[currentItemIndex].classList.add("active");
+  $(this).trigger("play.owl.autoplay", [10000]);
 });

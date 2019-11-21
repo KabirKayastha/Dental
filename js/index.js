@@ -29,4 +29,17 @@ if (!header.classList.contains("no-anim")) {
   headerAnim();
 }
 
+// nav toggler
+const navTogglerBtn = document.getElementsByClassName("nav-toggler-btn")[0];
+const navItems = document.getElementsByClassName("nav-items")[0];
+function toggleNav() {
+  navTogglerBtn.addEventListener("click", function(event) {
+    event.target.classList.toggle("fa-bars");
+    event.target.classList.toggle("fa-times");
+    navItems.classList.toggle("nav-items-shown");
+  });
+}
+
+toggleNav();
+
 //appearance animation

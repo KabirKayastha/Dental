@@ -1,9 +1,7 @@
 .services {
-  padding: $section-padding;
-
   .grid-wrapper {
     display: grid;
-    grid-template-columns: repeat(4, 250px);
+    grid-template-columns: repeat(4, 23%);
     justify-content: space-between;
     margin: 25px 0 40px 0;
 
@@ -14,7 +12,6 @@
 
       .grid-img-container {
         height: 300px;
-        width: 250px;
         border-radius: 5px;
         overflow: hidden;
         margin-bottom: 10px;
@@ -48,5 +45,24 @@
       font-size: 24px;
       margin: 5px 0 0 5px;
     }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .services {
+    .grid-wrapper {
+      grid-template-columns: repeat(2, calc(50% - 15px));
+      margin: 15px 0;
+
+      .grid-card {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .services .grid-wrapper {
+    grid-template-columns: 1fr;
   }
 }

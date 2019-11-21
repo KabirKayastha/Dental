@@ -142,3 +142,40 @@ footer {
     font-size: 14px;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  footer {
+    .page-nav {
+      width: 75%;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  footer {
+    .page-nav {
+      padding-top: 20px;
+      width: 100%;
+      flex-wrap: wrap;
+
+      li {
+        margin-bottom: 5px;
+      }
+    }
+
+    .info-footer {
+      .contact-footer {
+        flex-wrap: wrap;
+
+        li {
+          margin-bottom: 5px;
+          padding: 0 7px;
+          &:last-child,
+          &:nth-child(2) {
+            border-left: none;
+          }
+        }
+      }
+    }
+  }
+}

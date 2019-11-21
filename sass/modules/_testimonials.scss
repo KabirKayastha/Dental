@@ -1,5 +1,4 @@
 .testimonials {
-  padding: $section-padding;
   text-align: center;
 
   .wrapper {
@@ -75,6 +74,23 @@
       height: 20px;
       width: 20px;
       background-color: $primary-color;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .testimonials {
+    .wrapper {
+      width: 80%;
+      margin: 20px auto 30px auto;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .testimonials {
+    .wrapper {
+      width: 100%;
     }
   }
 }

@@ -1,11 +1,10 @@
 .contact {
-  padding: $section-padding;
-
   .wrapper {
     display: grid;
     grid-template-columns: 1fr;
     padding: 0 50px;
     justify-items: center;
+    // background: darkblue;
 
     .contact-form {
       grid-column: 3/4;
@@ -41,7 +40,7 @@
 
           textarea {
             height: 150px;
-            resize: none;
+            resize: vertical;
             padding: 10px;
           }
         }
@@ -116,6 +115,38 @@
 
     .contact-info {
       background-color: #eee;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .contact {
+    .wrapper {
+      // padding: 0;
+      .contact-form {
+        width: 100%;
+        // background: chocolate;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .contact .wrapper {
+    padding: 0 20px;
+
+    .contact-form .input-grp {
+      width: 100%;
+    }
+
+    .contact-form .button-container {
+      flex-wrap: wrap;
+      justify-content: center;
+
+      button {
+        width: 100%;
+        margin-bottom: 10px;
+      }
     }
   }
 }

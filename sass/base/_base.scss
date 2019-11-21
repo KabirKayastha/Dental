@@ -92,6 +92,10 @@ button {
 //   background-color: #f5f5f5;
 // }
 
+section {
+  padding: $section-padding;
+}
+
 .section-title {
   @include montserratMedium;
   font-size: 36px;
@@ -105,4 +109,19 @@ button {
   text-align: center;
   width: 75%;
   margin: 0 auto;
+}
+
+@media only screen and (max-width: 1024px) {
+  section {
+    padding: 15px 30px;
+  }
+  .section-desc {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 501px) {
+  section {
+    padding: 15px 15px;
+  }
 }
