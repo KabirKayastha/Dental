@@ -54,6 +54,12 @@ button {
 }
 
 /* line 45, ../sass/base/_base.scss */
+label {
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+/* line 50, ../sass/base/_base.scss */
 .primary-button {
   font-family: "Nunito", sans-serif;
   font-weight: 400;
@@ -66,17 +72,17 @@ button {
   border-radius: 5px;
   color: #fff;
 }
-/* line 56, ../sass/base/_base.scss */
+/* line 61, ../sass/base/_base.scss */
 .primary-button a {
   color: #fff;
 }
-/* line 60, ../sass/base/_base.scss */
+/* line 65, ../sass/base/_base.scss */
 .primary-button:hover {
   background-color: #623173;
   color: #fff;
 }
 
-/* line 66, ../sass/base/_base.scss */
+/* line 71, ../sass/base/_base.scss */
 .secondary-button {
   padding: 10px 15px;
   background-color: transparent;
@@ -87,27 +93,27 @@ button {
   color: #804097;
   cursor: pointer;
 }
-/* line 76, ../sass/base/_base.scss */
+/* line 81, ../sass/base/_base.scss */
 .secondary-button a {
   color: #804097;
 }
-/* line 80, ../sass/base/_base.scss */
+/* line 85, ../sass/base/_base.scss */
 .secondary-button:hover {
   background-color: #623173;
   border-color: #623173;
   color: #fff;
 }
-/* line 85, ../sass/base/_base.scss */
+/* line 90, ../sass/base/_base.scss */
 .secondary-button:hover a {
   color: #fff;
 }
 
-/* line 95, ../sass/base/_base.scss */
+/* line 100, ../sass/base/_base.scss */
 section {
   padding: 30px 60px;
 }
 
-/* line 99, ../sass/base/_base.scss */
+/* line 104, ../sass/base/_base.scss */
 .section-title {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -117,7 +123,7 @@ section {
   margin-bottom: 15px;
 }
 
-/* line 107, ../sass/base/_base.scss */
+/* line 112, ../sass/base/_base.scss */
 .section-desc {
   padding: 15px 0 30px 0;
   text-align: center;
@@ -126,23 +132,23 @@ section {
 }
 
 @media only screen and (max-width: 1024px) {
-  /* line 115, ../sass/base/_base.scss */
+  /* line 120, ../sass/base/_base.scss */
   section {
     padding: 15px 30px;
   }
 
-  /* line 118, ../sass/base/_base.scss */
+  /* line 123, ../sass/base/_base.scss */
   .section-desc {
     width: 100%;
   }
 }
 @media only screen and (max-width: 501px) {
-  /* line 124, ../sass/base/_base.scss */
+  /* line 129, ../sass/base/_base.scss */
   section {
     padding: 15px 15px;
   }
 }
-/* line 1, ../sass/modules/_header.scss */
+/* line 1, ../sass/modules/landingPage/_header.scss */
 header {
   position: fixed;
   top: 0;
@@ -152,21 +158,21 @@ header {
   background-color: rgba(238, 238, 238, 0.8);
   transition: box-shadow 0.5s ease-in-out, background-color 0.5s ease-in-out;
 }
-/* line 10, ../sass/modules/_header.scss */
+/* line 10, ../sass/modules/landingPage/_header.scss */
 header.hide-top-headaer, header.no-anim {
   background-color: #eeeeee;
   box-shadow: 0 4px 8px 0px rgba(119, 119, 119, 0.3);
 }
-/* line 15, ../sass/modules/_header.scss */
+/* line 15, ../sass/modules/landingPage/_header.scss */
 header.hide-top-headaer .top-header, header.no-anim .top-header {
   height: 0;
   overflow: hidden;
 }
-/* line 20, ../sass/modules/_header.scss */
+/* line 20, ../sass/modules/landingPage/_header.scss */
 header.hide-top-headaer nav .logo-container img, header.no-anim nav .logo-container img {
   height: 50px;
 }
-/* line 25, ../sass/modules/_header.scss */
+/* line 25, ../sass/modules/landingPage/_header.scss */
 header .top-header {
   padding: 0 60px;
   display: flex;
@@ -176,173 +182,173 @@ header .top-header {
   align-items: center;
   transition: height 0.5s ease-in-out;
 }
-/* line 34, ../sass/modules/_header.scss */
+/* line 34, ../sass/modules/landingPage/_header.scss */
 header .top-header .header-contact,
 header .top-header .header-socials {
   display: flex;
 }
-/* line 38, ../sass/modules/_header.scss */
+/* line 38, ../sass/modules/landingPage/_header.scss */
 header .top-header .header-contact li,
 header .top-header .header-socials li {
   padding: 0 5px;
 }
-/* line 41, ../sass/modules/_header.scss */
+/* line 41, ../sass/modules/landingPage/_header.scss */
 header .top-header .header-contact li span,
 header .top-header .header-socials li span {
   color: #777;
 }
-/* line 47, ../sass/modules/_header.scss */
+/* line 47, ../sass/modules/landingPage/_header.scss */
 header .top-header .header-contact {
   justify-content: space-between;
   width: 60%;
 }
-/* line 52, ../sass/modules/_header.scss */
+/* line 52, ../sass/modules/landingPage/_header.scss */
 header .top-header .header-contact li span::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 700;
   color: #804097;
   margin-right: 5px;
 }
-/* line 58, ../sass/modules/_header.scss */
+/* line 58, ../sass/modules/landingPage/_header.scss */
 header .top-header .header-contact li span.header-mail::before {
   content: "\f0e0";
 }
-/* line 61, ../sass/modules/_header.scss */
+/* line 61, ../sass/modules/landingPage/_header.scss */
 header .top-header .header-contact li span.header-phone::before {
   content: "\f879";
 }
-/* line 64, ../sass/modules/_header.scss */
+/* line 64, ../sass/modules/landingPage/_header.scss */
 header .top-header .header-contact li span.header-location::before {
   content: "\f3c5";
 }
-/* line 72, ../sass/modules/_header.scss */
+/* line 72, ../sass/modules/landingPage/_header.scss */
 header .top-header .header-socials li {
   padding: 0 10px;
 }
-/* line 74, ../sass/modules/_header.scss */
+/* line 74, ../sass/modules/landingPage/_header.scss */
 header .top-header .header-socials li i {
   font-size: 22px;
   color: #777;
 }
-/* line 78, ../sass/modules/_header.scss */
+/* line 78, ../sass/modules/landingPage/_header.scss */
 header .top-header .header-socials li i.fa-facebook:hover {
   color: #3b5998;
 }
-/* line 82, ../sass/modules/_header.scss */
+/* line 82, ../sass/modules/landingPage/_header.scss */
 header .top-header .header-socials li i.fa-twitter:hover {
   color: #00acee;
 }
-/* line 86, ../sass/modules/_header.scss */
+/* line 86, ../sass/modules/landingPage/_header.scss */
 header .top-header .header-socials li i.fa-instagram:hover {
   color: #333;
 }
-/* line 90, ../sass/modules/_header.scss */
+/* line 90, ../sass/modules/landingPage/_header.scss */
 header .top-header .header-socials li i.fa-linkedin:hover {
   color: #0e76a8;
 }
-/* line 98, ../sass/modules/_header.scss */
+/* line 98, ../sass/modules/landingPage/_header.scss */
 header .nav-toggler {
   display: none;
 }
-/* line 102, ../sass/modules/_header.scss */
+/* line 102, ../sass/modules/landingPage/_header.scss */
 header nav {
   display: flex;
   align-items: center;
   padding: 5px 60px;
   justify-content: space-between;
 }
-/* line 110, ../sass/modules/_header.scss */
+/* line 110, ../sass/modules/landingPage/_header.scss */
 header nav .logo-container img {
   max-height: 70px;
   height: 70px;
   transition: height 0.5s ease-in-out;
 }
-/* line 117, ../sass/modules/_header.scss */
+/* line 117, ../sass/modules/landingPage/_header.scss */
 header nav .nav-items {
   display: flex;
   justify-content: space-between;
 }
-/* line 120, ../sass/modules/_header.scss */
+/* line 120, ../sass/modules/landingPage/_header.scss */
 header nav .nav-items li {
   text-transform: uppercase;
   padding: 0 20px;
 }
-/* line 124, ../sass/modules/_header.scss */
+/* line 124, ../sass/modules/landingPage/_header.scss */
 header nav .nav-items li.appointment-nav {
   padding-right: 0;
 }
-/* line 127, ../sass/modules/_header.scss */
+/* line 127, ../sass/modules/landingPage/_header.scss */
 header nav .nav-items li.appointment-nav a {
   color: #804097;
   font-weight: 700;
 }
-/* line 131, ../sass/modules/_header.scss */
+/* line 131, ../sass/modules/landingPage/_header.scss */
 header nav .nav-items li.appointment-nav a:hover {
   color: #623173;
 }
 
 @media only screen and (max-width: 1024px) {
-  /* line 143, ../sass/modules/_header.scss */
+  /* line 143, ../sass/modules/landingPage/_header.scss */
   header .top-header {
     padding: 0 30px;
   }
-  /* line 146, ../sass/modules/_header.scss */
+  /* line 146, ../sass/modules/landingPage/_header.scss */
   header .top-header .header-contact {
     width: 80%;
   }
-  /* line 151, ../sass/modules/_header.scss */
+  /* line 151, ../sass/modules/landingPage/_header.scss */
   header nav {
     padding: 5px 30px;
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 159, ../sass/modules/_header.scss */
+  /* line 159, ../sass/modules/landingPage/_header.scss */
   header .top-header {
     display: none;
   }
-  /* line 163, ../sass/modules/_header.scss */
+  /* line 163, ../sass/modules/landingPage/_header.scss */
   header nav {
     flex-direction: column;
     padding: 15px 30px;
   }
-  /* line 168, ../sass/modules/_header.scss */
+  /* line 168, ../sass/modules/landingPage/_header.scss */
   header nav .nav-items li {
     padding: 0 15px;
   }
-  /* line 171, ../sass/modules/_header.scss */
+  /* line 171, ../sass/modules/landingPage/_header.scss */
   header nav .nav-items li.appointment-nav {
     padding-right: 15px;
   }
 }
 @media only screen and (max-width: 500px) {
-  /* line 182, ../sass/modules/_header.scss */
+  /* line 182, ../sass/modules/landingPage/_header.scss */
   header .nav-toggler {
     display: block;
   }
-  /* line 186, ../sass/modules/_header.scss */
+  /* line 186, ../sass/modules/landingPage/_header.scss */
   header nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 7px 0px;
   }
-  /* line 191, ../sass/modules/_header.scss */
+  /* line 191, ../sass/modules/landingPage/_header.scss */
   header nav .nav-toggler {
     grid-column: 2/3;
     justify-self: flex-end;
     padding-right: 15px;
   }
-  /* line 196, ../sass/modules/_header.scss */
+  /* line 196, ../sass/modules/landingPage/_header.scss */
   header nav .nav-toggler i {
     font-size: 40px;
     color: #804097;
     cursor: pointer;
   }
-  /* line 203, ../sass/modules/_header.scss */
+  /* line 203, ../sass/modules/landingPage/_header.scss */
   header nav .logo-container {
     padding-left: 15px;
     grid-column: 1/2;
   }
-  /* line 208, ../sass/modules/_header.scss */
+  /* line 208, ../sass/modules/landingPage/_header.scss */
   header nav .nav-items {
     grid-column: 1/3;
     width: 100%;
@@ -353,24 +359,24 @@ header nav .nav-items li.appointment-nav a:hover {
     height: 0px;
     transition: height 0.3s ease-in-out;
   }
-  /* line 218, ../sass/modules/_header.scss */
+  /* line 218, ../sass/modules/landingPage/_header.scss */
   header nav .nav-items li {
     padding: 10px 0;
   }
-  /* line 221, ../sass/modules/_header.scss */
+  /* line 221, ../sass/modules/landingPage/_header.scss */
   header nav .nav-items li:hover {
     background-color: #aaa;
   }
-  /* line 225, ../sass/modules/_header.scss */
+  /* line 225, ../sass/modules/landingPage/_header.scss */
   header nav .nav-items li.appointment-nav {
     padding-right: 0px;
   }
-  /* line 231, ../sass/modules/_header.scss */
+  /* line 231, ../sass/modules/landingPage/_header.scss */
   header nav .nav-items-shown {
     height: 270px;
   }
 }
-/* line 1, ../sass/modules/_banner.scss */
+/* line 1, ../sass/modules/landingPage/_banner.scss */
 .banner {
   height: 100vh;
   width: 100%;
@@ -379,14 +385,14 @@ header nav .nav-items li.appointment-nav a:hover {
   position: relative;
   padding: 0;
 }
-/* line 10, ../sass/modules/_banner.scss */
+/* line 10, ../sass/modules/landingPage/_banner.scss */
 .banner .banner-img {
   height: 100vh;
   width: 100%;
   object-fit: cover;
   object-position: center;
 }
-/* line 17, ../sass/modules/_banner.scss */
+/* line 17, ../sass/modules/landingPage/_banner.scss */
 .banner .slogan-container {
   position: absolute;
   top: 55%;
@@ -398,7 +404,7 @@ header nav .nav-items li.appointment-nav a:hover {
   transform: translateY(-50%);
   border-radius: 4px;
 }
-/* line 28, ../sass/modules/_banner.scss */
+/* line 28, ../sass/modules/landingPage/_banner.scss */
 .banner .slogan-container .banner-slogan {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
@@ -407,14 +413,14 @@ header nav .nav-items li.appointment-nav a:hover {
   color: #fff;
   text-shadow: 0 3px 8px rgba(0, 0, 0, 0.26);
 }
-/* line 37, ../sass/modules/_banner.scss */
+/* line 37, ../sass/modules/landingPage/_banner.scss */
 .banner .button-container {
   position: absolute;
   bottom: 20px;
   right: 60px;
   z-index: 1;
 }
-/* line 43, ../sass/modules/_banner.scss */
+/* line 43, ../sass/modules/landingPage/_banner.scss */
 .banner .button-container button {
   height: 60px;
   width: 60px;
@@ -425,49 +431,49 @@ header nav .nav-items li.appointment-nav a:hover {
   padding: 15px;
   cursor: pointer;
 }
-/* line 53, ../sass/modules/_banner.scss */
+/* line 53, ../sass/modules/landingPage/_banner.scss */
 .banner .button-container button img {
   height: 100%;
   width: 100%;
 }
-/* line 58, ../sass/modules/_banner.scss */
+/* line 58, ../sass/modules/landingPage/_banner.scss */
 .banner .button-container button:hover {
   background-color: #804097;
 }
 
 @media only screen and (max-width: 1024px) {
-  /* line 67, ../sass/modules/_banner.scss */
+  /* line 67, ../sass/modules/landingPage/_banner.scss */
   .banner .button-container {
     right: 30px;
     bottom: 30px;
   }
 }
 @media only screen and (max-width: 500px) {
-  /* line 76, ../sass/modules/_banner.scss */
+  /* line 76, ../sass/modules/landingPage/_banner.scss */
   .banner .slogan-container {
     width: 80%;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
   }
-  /* line 81, ../sass/modules/_banner.scss */
+  /* line 81, ../sass/modules/landingPage/_banner.scss */
   .banner .slogan-container .banner-slogan {
     font-size: 40px;
   }
-  /* line 86, ../sass/modules/_banner.scss */
+  /* line 86, ../sass/modules/landingPage/_banner.scss */
   .banner .button-container {
     right: 50%;
     transform: translateX(50%);
   }
 }
-/* line 1, ../sass/modules/_about.scss */
+/* line 1, ../sass/modules/landingPage/_about.scss */
 .about {
   margin-top: 30px;
   display: grid;
   grid-template-columns: 1fr 30px 1fr;
   align-items: center;
 }
-/* line 7, ../sass/modules/_about.scss */
+/* line 7, ../sass/modules/landingPage/_about.scss */
 .about .about-img {
   grid-column: 1/2;
   border-radius: 5px;
@@ -475,18 +481,18 @@ header nav .nav-items li.appointment-nav a:hover {
   width: 100%;
   height: 500px;
 }
-/* line 14, ../sass/modules/_about.scss */
+/* line 14, ../sass/modules/landingPage/_about.scss */
 .about .about-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
 }
-/* line 22, ../sass/modules/_about.scss */
+/* line 22, ../sass/modules/landingPage/_about.scss */
 .about .about-desc-container {
   grid-column: 3/4;
 }
-/* line 25, ../sass/modules/_about.scss */
+/* line 25, ../sass/modules/landingPage/_about.scss */
 .about .about-desc-container .about-heading {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -496,24 +502,24 @@ header nav .nav-items li.appointment-nav a:hover {
   margin-bottom: 15px;
   text-transform: capitalize;
 }
-/* line 34, ../sass/modules/_about.scss */
+/* line 34, ../sass/modules/landingPage/_about.scss */
 .about .about-desc-container p {
   padding: 15px 0;
 }
-/* line 38, ../sass/modules/_about.scss */
+/* line 38, ../sass/modules/landingPage/_about.scss */
 .about .about-desc-container .p1 {
   font-size: 20px;
   color: #804097;
 }
-/* line 43, ../sass/modules/_about.scss */
+/* line 43, ../sass/modules/landingPage/_about.scss */
 .about .about-desc-container .p2 {
   font-size: 18px;
 }
-/* line 48, ../sass/modules/_about.scss */
+/* line 48, ../sass/modules/landingPage/_about.scss */
 .about .about-desc-container .button-container {
   margin: 15px 0;
 }
-/* line 51, ../sass/modules/_about.scss */
+/* line 51, ../sass/modules/landingPage/_about.scss */
 .about .about-desc-container .button-container .secondary-button a::after {
   content: "\f061";
   font-family: "Font Awesome 5 Free";
@@ -523,69 +529,69 @@ header nav .nav-items li.appointment-nav a:hover {
 }
 
 @media only screen and (max-width: 1024px) {
-  /* line 64, ../sass/modules/_about.scss */
+  /* line 64, ../sass/modules/landingPage/_about.scss */
   .about {
     margin-top: 15px;
   }
-  /* line 67, ../sass/modules/_about.scss */
+  /* line 67, ../sass/modules/landingPage/_about.scss */
   .about .about-img {
     grid-column: 1/4;
     margin-bottom: 15px;
   }
-  /* line 72, ../sass/modules/_about.scss */
+  /* line 72, ../sass/modules/landingPage/_about.scss */
   .about .about-desc-container {
     grid-column: 1/4;
   }
-  /* line 75, ../sass/modules/_about.scss */
+  /* line 75, ../sass/modules/landingPage/_about.scss */
   .about .about-desc-container .about-heading {
     width: 100%;
   }
 }
 @media only screen and (max-width: 500px) {
-  /* line 84, ../sass/modules/_about.scss */
+  /* line 84, ../sass/modules/landingPage/_about.scss */
   .about .about-img {
     height: 300px;
   }
 }
-/* line 2, ../sass/modules/_services.scss */
+/* line 2, ../sass/modules/landingPage/_services.scss */
 .services .grid-wrapper {
   display: grid;
   grid-template-columns: repeat(4, 23%);
   justify-content: space-between;
   margin: 25px 0 40px 0;
 }
-/* line 8, ../sass/modules/_services.scss */
+/* line 8, ../sass/modules/landingPage/_services.scss */
 .services .grid-wrapper .grid-card {
   text-align: center;
   transition: transform 0.3s ease-in-out;
 }
-/* line 13, ../sass/modules/_services.scss */
+/* line 13, ../sass/modules/landingPage/_services.scss */
 .services .grid-wrapper .grid-card .grid-img-container {
   height: 300px;
   border-radius: 5px;
   overflow: hidden;
   margin-bottom: 10px;
 }
-/* line 19, ../sass/modules/_services.scss */
+/* line 19, ../sass/modules/landingPage/_services.scss */
 .services .grid-wrapper .grid-card .grid-img-container img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   object-position: center;
 }
-/* line 27, ../sass/modules/_services.scss */
+/* line 27, ../sass/modules/landingPage/_services.scss */
 .services .grid-wrapper .grid-card .grid-card-label {
   font-weight: 700;
 }
-/* line 31, ../sass/modules/_services.scss */
+/* line 31, ../sass/modules/landingPage/_services.scss */
 .services .grid-wrapper .grid-card:hover {
   transform: translateY(-10px);
 }
-/* line 37, ../sass/modules/_services.scss */
+/* line 37, ../sass/modules/landingPage/_services.scss */
 .services .button-container {
   text-align: center;
 }
-/* line 40, ../sass/modules/_services.scss */
+/* line 40, ../sass/modules/landingPage/_services.scss */
 .services .button-container .secondary-button a::after {
   content: "\f061";
   font-family: "Font Awesome 5 Free";
@@ -595,31 +601,31 @@ header nav .nav-items li.appointment-nav a:hover {
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 53, ../sass/modules/_services.scss */
+  /* line 53, ../sass/modules/landingPage/_services.scss */
   .services .grid-wrapper {
     grid-template-columns: repeat(2, calc(50% - 15px));
     margin: 15px 0;
   }
-  /* line 57, ../sass/modules/_services.scss */
+  /* line 57, ../sass/modules/landingPage/_services.scss */
   .services .grid-wrapper .grid-card {
     margin-bottom: 30px;
   }
 }
 @media only screen and (max-width: 500px) {
-  /* line 65, ../sass/modules/_services.scss */
+  /* line 65, ../sass/modules/landingPage/_services.scss */
   .services .grid-wrapper {
     grid-template-columns: 1fr;
   }
 }
-/* line 1, ../sass/modules/_doctors.scss */
+/* line 1, ../sass/modules/landingPage/_doctors.scss */
 .doctors {
   text-align: center;
 }
-/* line 4, ../sass/modules/_doctors.scss */
+/* line 4, ../sass/modules/landingPage/_doctors.scss */
 .doctors .grid-wrapper {
   width: 100%;
 }
-/* line 8, ../sass/modules/_doctors.scss */
+/* line 8, ../sass/modules/landingPage/_doctors.scss */
 .doctors .grid-wrapper .grid-card {
   display: flex;
   flex-direction: column;
@@ -627,14 +633,14 @@ header nav .nav-items li.appointment-nav a:hover {
   justify-content: center;
   margin-bottom: 30px;
 }
-/* line 15, ../sass/modules/_doctors.scss */
+/* line 15, ../sass/modules/landingPage/_doctors.scss */
 .doctors .grid-wrapper .grid-card .grid-img-container {
   height: 250px;
   width: 250px;
   border-radius: 50%;
   overflow: hidden;
 }
-/* line 21, ../sass/modules/_doctors.scss */
+/* line 21, ../sass/modules/landingPage/_doctors.scss */
 .doctors .grid-wrapper .grid-card .grid-img-container img {
   width: 100%;
   height: 100%;
@@ -642,25 +648,25 @@ header nav .nav-items li.appointment-nav a:hover {
   object-position: center;
   transition: transform 0.5s ease-in-out;
 }
-/* line 30, ../sass/modules/_doctors.scss */
+/* line 30, ../sass/modules/landingPage/_doctors.scss */
 .doctors .grid-wrapper .grid-card:hover {
   transform: translateY(0px);
 }
-/* line 33, ../sass/modules/_doctors.scss */
+/* line 33, ../sass/modules/landingPage/_doctors.scss */
 .doctors .grid-wrapper .grid-card:hover img {
   transform: scale(1.09);
 }
-/* line 39, ../sass/modules/_doctors.scss */
+/* line 39, ../sass/modules/landingPage/_doctors.scss */
 .doctors .grid-wrapper .grid-card .grid-card-label .doctor-name {
   font-size: 22px;
 }
-/* line 43, ../sass/modules/_doctors.scss */
+/* line 43, ../sass/modules/landingPage/_doctors.scss */
 .doctors .grid-wrapper .grid-card .grid-card-label .doctor-post {
   font-weight: 300;
   font-size: 16px;
   color: #804097;
 }
-/* line 52, ../sass/modules/_doctors.scss */
+/* line 52, ../sass/modules/landingPage/_doctors.scss */
 .doctors .button-container button {
   width: 40px;
   height: 40px;
@@ -670,25 +676,25 @@ header nav .nav-items li.appointment-nav a:hover {
   cursor: pointer;
   margin: 0 3px;
 }
-/* line 61, ../sass/modules/_doctors.scss */
+/* line 61, ../sass/modules/landingPage/_doctors.scss */
 .doctors .button-container button:hover {
   background-color: #623173;
 }
 
-/* line 1, ../sass/modules/_testimonials.scss */
+/* line 1, ../sass/modules/landingPage/_testimonials.scss */
 .testimonials {
   text-align: center;
 }
-/* line 4, ../sass/modules/_testimonials.scss */
+/* line 4, ../sass/modules/landingPage/_testimonials.scss */
 .testimonials .wrapper {
   margin: 40px auto 30px auto;
   width: 60%;
 }
-/* line 10, ../sass/modules/_testimonials.scss */
+/* line 10, ../sass/modules/landingPage/_testimonials.scss */
 .testimonials .wrapper .content {
   margin: 15px 0;
 }
-/* line 13, ../sass/modules/_testimonials.scss */
+/* line 13, ../sass/modules/landingPage/_testimonials.scss */
 .testimonials .wrapper .content::before {
   content: "\f10d";
   font-family: "Font Awesome 5 Free";
@@ -696,17 +702,17 @@ header nav .nav-items li.appointment-nav a:hover {
   font-size: 48px;
   color: rgba(128, 64, 151, 0.5);
 }
-/* line 24, ../sass/modules/_testimonials.scss */
+/* line 24, ../sass/modules/landingPage/_testimonials.scss */
 .testimonials .wrapper p {
   margin: 15px 0;
   line-height: 30px;
   font-size: 20px;
 }
-/* line 30, ../sass/modules/_testimonials.scss */
+/* line 30, ../sass/modules/landingPage/_testimonials.scss */
 .testimonials .wrapper .name {
   color: #804097;
 }
-/* line 33, ../sass/modules/_testimonials.scss */
+/* line 33, ../sass/modules/landingPage/_testimonials.scss */
 .testimonials .wrapper .name::before {
   content: "-";
   margin: 0 3px;
@@ -714,7 +720,7 @@ header nav .nav-items li.appointment-nav a:hover {
   font-size: 22px;
   color: #804097;
 }
-/* line 43, ../sass/modules/_testimonials.scss */
+/* line 43, ../sass/modules/landingPage/_testimonials.scss */
 .testimonials .profile {
   width: 150px;
   height: 150px;
@@ -722,20 +728,20 @@ header nav .nav-items li.appointment-nav a:hover {
   border-radius: 50%;
   margin: 0px auto;
 }
-/* line 50, ../sass/modules/_testimonials.scss */
+/* line 50, ../sass/modules/landingPage/_testimonials.scss */
 .testimonials .profile img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
 }
-/* line 58, ../sass/modules/_testimonials.scss */
+/* line 58, ../sass/modules/landingPage/_testimonials.scss */
 .testimonials .owl-custom-dots {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-/* line 64, ../sass/modules/_testimonials.scss */
+/* line 64, ../sass/modules/landingPage/_testimonials.scss */
 .testimonials .owl-dot {
   margin: 0 3px;
   height: 15px;
@@ -744,7 +750,7 @@ header nav .nav-items li.appointment-nav a:hover {
   cursor: pointer;
   border-radius: 50%;
 }
-/* line 73, ../sass/modules/_testimonials.scss */
+/* line 73, ../sass/modules/landingPage/_testimonials.scss */
 .testimonials .owl-dot.active {
   height: 20px;
   width: 20px;
@@ -752,26 +758,26 @@ header nav .nav-items li.appointment-nav a:hover {
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 83, ../sass/modules/_testimonials.scss */
+  /* line 83, ../sass/modules/landingPage/_testimonials.scss */
   .testimonials .wrapper {
     width: 80%;
     margin: 20px auto 30px auto;
   }
 }
 @media only screen and (max-width: 500px) {
-  /* line 92, ../sass/modules/_testimonials.scss */
+  /* line 92, ../sass/modules/landingPage/_testimonials.scss */
   .testimonials .wrapper {
     width: 100%;
   }
 }
-/* line 2, ../sass/modules/_contact.scss */
+/* line 2, ../sass/modules/landingPage/_contact.scss */
 .contact .wrapper {
   display: grid;
   grid-template-columns: 1fr;
   padding: 0 50px;
   justify-items: center;
 }
-/* line 9, ../sass/modules/_contact.scss */
+/* line 9, ../sass/modules/landingPage/_contact.scss */
 .contact .wrapper .contact-form {
   grid-column: 3/4;
   display: flex;
@@ -779,18 +785,18 @@ header nav .nav-items li.appointment-nav a:hover {
   justify-content: space-between;
   width: 75%;
 }
-/* line 16, ../sass/modules/_contact.scss */
+/* line 16, ../sass/modules/landingPage/_contact.scss */
 .contact .wrapper .contact-form .input-grp {
   width: calc(50% - 15px);
   margin-bottom: 20px;
   position: relative;
 }
-/* line 21, ../sass/modules/_contact.scss */
+/* line 21, ../sass/modules/landingPage/_contact.scss */
 .contact .wrapper .contact-form .input-grp label,
 .contact .wrapper .contact-form .input-grp input {
   display: block;
 }
-/* line 26, ../sass/modules/_contact.scss */
+/* line 26, ../sass/modules/landingPage/_contact.scss */
 .contact .wrapper .contact-form .input-grp input,
 .contact .wrapper .contact-form .input-grp textarea {
   font-family: "Nunito", sans-serif;
@@ -804,26 +810,26 @@ header nav .nav-items li.appointment-nav a:hover {
   border-radius: 3px;
   background: transparent;
 }
-/* line 38, ../sass/modules/_contact.scss */
+/* line 38, ../sass/modules/landingPage/_contact.scss */
 .contact .wrapper .contact-form .input-grp.textarea {
   width: 100%;
 }
-/* line 41, ../sass/modules/_contact.scss */
+/* line 41, ../sass/modules/landingPage/_contact.scss */
 .contact .wrapper .contact-form .input-grp.textarea textarea {
   height: 150px;
   resize: vertical;
   padding: 10px;
 }
-/* line 48, ../sass/modules/_contact.scss */
+/* line 48, ../sass/modules/landingPage/_contact.scss */
 .contact .wrapper .contact-form .input-grp span {
   width: 100%;
   height: 45px;
 }
-/* line 52, ../sass/modules/_contact.scss */
+/* line 52, ../sass/modules/landingPage/_contact.scss */
 .contact .wrapper .contact-form .input-grp span input {
   padding-right: 35px;
 }
-/* line 56, ../sass/modules/_contact.scss */
+/* line 56, ../sass/modules/landingPage/_contact.scss */
 .contact .wrapper .contact-form .input-grp span:after {
   font-family: "Font Awesome 5 Free";
   font-weight: 400;
@@ -833,46 +839,46 @@ header nav .nav-items li.appointment-nav a:hover {
   top: calc(50% + 3px);
   right: 10px;
 }
-/* line 66, ../sass/modules/_contact.scss */
+/* line 66, ../sass/modules/landingPage/_contact.scss */
 .contact .wrapper .contact-form .input-grp span.first-name::after, .contact .wrapper .contact-form .input-grp span.last-name::after {
   content: "\f007";
 }
-/* line 71, ../sass/modules/_contact.scss */
+/* line 71, ../sass/modules/landingPage/_contact.scss */
 .contact .wrapper .contact-form .input-grp span.email::after {
   content: "\f0e0";
   font-family: "Font Awesome 5 Free";
 }
-/* line 75, ../sass/modules/_contact.scss */
+/* line 75, ../sass/modules/landingPage/_contact.scss */
 .contact .wrapper .contact-form .input-grp span.contact-no::after {
   content: "\f095";
   font-family: "Font Awesome 5 Free";
   font-weight: 700;
 }
-/* line 83, ../sass/modules/_contact.scss */
+/* line 83, ../sass/modules/landingPage/_contact.scss */
 .contact .wrapper .contact-form .button-container {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-/* line 89, ../sass/modules/_contact.scss */
+/* line 89, ../sass/modules/landingPage/_contact.scss */
 .contact .wrapper .contact-form .button-container button {
   width: 30%;
   padding: 10px 0;
 }
-/* line 94, ../sass/modules/_contact.scss */
+/* line 94, ../sass/modules/landingPage/_contact.scss */
 .contact .wrapper .contact-form .button-container a {
   color: #804097;
 }
-/* line 97, ../sass/modules/_contact.scss */
+/* line 97, ../sass/modules/landingPage/_contact.scss */
 .contact .wrapper .contact-form .button-container a:hover {
   color: #623173;
 }
-/* line 100, ../sass/modules/_contact.scss */
+/* line 100, ../sass/modules/landingPage/_contact.scss */
 .contact .wrapper .contact-form .button-container a:hover::after {
   margin: 0 0 0 10px;
 }
-/* line 105, ../sass/modules/_contact.scss */
+/* line 105, ../sass/modules/landingPage/_contact.scss */
 .contact .wrapper .contact-form .button-container a:after {
   content: "\f061";
   font-family: "Font Awesome 5 Free";
@@ -880,42 +886,43 @@ header nav .nav-items li.appointment-nav a:hover {
   margin: 0 5px;
   transition: margin 0.3s ease-in-out;
 }
-/* line 116, ../sass/modules/_contact.scss */
+/* line 116, ../sass/modules/landingPage/_contact.scss */
 .contact .wrapper .contact-info {
   background-color: #eee;
 }
 
 @media only screen and (max-width: 1024px) {
-  /* line 126, ../sass/modules/_contact.scss */
+  /* line 126, ../sass/modules/landingPage/_contact.scss */
   .contact .wrapper .contact-form {
     width: 100%;
   }
 }
 @media only screen and (max-width: 500px) {
-  /* line 135, ../sass/modules/_contact.scss */
+  /* line 135, ../sass/modules/landingPage/_contact.scss */
   .contact .wrapper {
     padding: 0 20px;
   }
-  /* line 138, ../sass/modules/_contact.scss */
+  /* line 138, ../sass/modules/landingPage/_contact.scss */
   .contact .wrapper .contact-form .input-grp {
     width: 100%;
   }
-  /* line 142, ../sass/modules/_contact.scss */
+  /* line 142, ../sass/modules/landingPage/_contact.scss */
   .contact .wrapper .contact-form .button-container {
     flex-wrap: wrap;
     justify-content: center;
   }
-  /* line 146, ../sass/modules/_contact.scss */
+  /* line 146, ../sass/modules/landingPage/_contact.scss */
   .contact .wrapper .contact-form .button-container button {
     width: 100%;
     margin-bottom: 10px;
   }
 }
-/* line 1, ../sass/modules/_footer.scss */
+/* line 1, ../sass/modules/landingPage/_footer.scss */
 footer {
   font-family: "Nunito", sans-serif;
   font-weight: 300;
   margin-top: 30px;
+  padding-top: 15px;
   background-color: #35366a;
   display: flex;
   flex-direction: column;
@@ -924,101 +931,101 @@ footer {
   color: #fff;
   text-align: center;
 }
-/* line 14, ../sass/modules/_footer.scss */
+/* line 15, ../sass/modules/landingPage/_footer.scss */
 footer a {
   color: #fff;
 }
-/* line 16, ../sass/modules/_footer.scss */
+/* line 17, ../sass/modules/landingPage/_footer.scss */
 footer a:hover {
   color: #fff;
   text-decoration: underline;
 }
-/* line 22, ../sass/modules/_footer.scss */
+/* line 23, ../sass/modules/landingPage/_footer.scss */
 footer .page-nav {
   display: flex;
   justify-content: center;
   font-size: 14px;
-  padding: 15px 0;
+  padding-bottom: 15px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   margin-bottom: 30px;
   width: 60%;
 }
-/* line 31, ../sass/modules/_footer.scss */
+/* line 32, ../sass/modules/landingPage/_footer.scss */
 footer .page-nav li {
   padding: 0 15px;
   text-transform: capitalize;
 }
-/* line 37, ../sass/modules/_footer.scss */
+/* line 38, ../sass/modules/landingPage/_footer.scss */
 footer .info-footer {
   padding-bottom: 30px;
 }
-/* line 40, ../sass/modules/_footer.scss */
+/* line 41, ../sass/modules/landingPage/_footer.scss */
 footer .info-footer .company-name {
   font-size: 22px;
 }
-/* line 42, ../sass/modules/_footer.scss */
+/* line 43, ../sass/modules/landingPage/_footer.scss */
 footer .info-footer .company-name:hover {
   text-decoration: none;
 }
-/* line 47, ../sass/modules/_footer.scss */
+/* line 48, ../sass/modules/landingPage/_footer.scss */
 footer .info-footer .contact-footer {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 5px 0;
 }
-/* line 53, ../sass/modules/_footer.scss */
+/* line 54, ../sass/modules/landingPage/_footer.scss */
 footer .info-footer .contact-footer li {
   padding: 0 15px;
   font-size: 16px;
 }
-/* line 57, ../sass/modules/_footer.scss */
+/* line 58, ../sass/modules/landingPage/_footer.scss */
 footer .info-footer .contact-footer li:last-child, footer .info-footer .contact-footer li:nth-child(2) {
   border-left: 1px solid #fff;
 }
-/* line 62, ../sass/modules/_footer.scss */
+/* line 63, ../sass/modules/landingPage/_footer.scss */
 footer .info-footer .contact-footer li:before {
   font-family: "Font Awesome 5 Free";
   font-weight: 700;
   font-size: 14px;
   margin-right: 7px;
 }
-/* line 69, ../sass/modules/_footer.scss */
+/* line 70, ../sass/modules/landingPage/_footer.scss */
 footer .info-footer .contact-footer li.footer-email:before {
   content: "\f0e0";
 }
-/* line 73, ../sass/modules/_footer.scss */
+/* line 74, ../sass/modules/landingPage/_footer.scss */
 footer .info-footer .contact-footer li.footer-phone:before {
   content: "\f879";
 }
-/* line 77, ../sass/modules/_footer.scss */
+/* line 78, ../sass/modules/landingPage/_footer.scss */
 footer .info-footer .contact-footer li.footer-location:before {
   content: "\f3c5";
 }
-/* line 83, ../sass/modules/_footer.scss */
+/* line 84, ../sass/modules/landingPage/_footer.scss */
 footer .info-footer .opening-info {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 5px 0;
 }
-/* line 89, ../sass/modules/_footer.scss */
+/* line 90, ../sass/modules/landingPage/_footer.scss */
 footer .info-footer .opening-info .footer-opening-hrs {
   font-family: "Nunito", sans-serif;
   font-weight: 300;
   margin-right: 15px;
 }
-/* line 94, ../sass/modules/_footer.scss */
+/* line 95, ../sass/modules/landingPage/_footer.scss */
 footer .info-footer .opening-info .opening-time {
   font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 0.7px;
 }
-/* line 98, ../sass/modules/_footer.scss */
+/* line 99, ../sass/modules/landingPage/_footer.scss */
 footer .info-footer .opening-info .opening-time span {
   padding: 0 5px;
 }
-/* line 104, ../sass/modules/_footer.scss */
+/* line 105, ../sass/modules/landingPage/_footer.scss */
 footer .info-footer .footer-socials {
   display: flex;
   justify-content: center;
@@ -1027,27 +1034,27 @@ footer .info-footer .footer-socials {
   width: auto;
   margin-right: 7px;
 }
-/* line 111, ../sass/modules/_footer.scss */
+/* line 112, ../sass/modules/landingPage/_footer.scss */
 footer .info-footer .footer-socials li {
   padding: 0 10px;
 }
-/* line 117, ../sass/modules/_footer.scss */
+/* line 118, ../sass/modules/landingPage/_footer.scss */
 footer .info-footer .footer-socials li i.fa-facebook:hover {
   color: #3b5998;
 }
-/* line 121, ../sass/modules/_footer.scss */
+/* line 122, ../sass/modules/landingPage/_footer.scss */
 footer .info-footer .footer-socials li i.fa-twitter:hover {
   color: #00acee;
 }
-/* line 125, ../sass/modules/_footer.scss */
+/* line 126, ../sass/modules/landingPage/_footer.scss */
 footer .info-footer .footer-socials li i.fa-instagram:hover {
   color: #333;
 }
-/* line 129, ../sass/modules/_footer.scss */
+/* line 130, ../sass/modules/landingPage/_footer.scss */
 footer .info-footer .footer-socials li i.fa-linkedin:hover {
   color: #0e76a8;
 }
-/* line 137, ../sass/modules/_footer.scss */
+/* line 138, ../sass/modules/landingPage/_footer.scss */
 footer .copy-right {
   padding: 20px 0;
   text-align: center;
@@ -1057,33 +1064,202 @@ footer .copy-right {
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 148, ../sass/modules/_footer.scss */
+  /* line 149, ../sass/modules/landingPage/_footer.scss */
   footer .page-nav {
     width: 75%;
   }
 }
 @media only screen and (max-width: 500px) {
-  /* line 156, ../sass/modules/_footer.scss */
+  /* line 157, ../sass/modules/landingPage/_footer.scss */
   footer .page-nav {
     padding-top: 20px;
     width: 100%;
     flex-wrap: wrap;
   }
-  /* line 161, ../sass/modules/_footer.scss */
+  /* line 162, ../sass/modules/landingPage/_footer.scss */
   footer .page-nav li {
     margin-bottom: 5px;
   }
-  /* line 167, ../sass/modules/_footer.scss */
+  /* line 168, ../sass/modules/landingPage/_footer.scss */
   footer .info-footer .contact-footer {
     flex-wrap: wrap;
   }
-  /* line 170, ../sass/modules/_footer.scss */
+  /* line 171, ../sass/modules/landingPage/_footer.scss */
   footer .info-footer .contact-footer li {
     margin-bottom: 5px;
     padding: 0 7px;
   }
-  /* line 173, ../sass/modules/_footer.scss */
+  /* line 174, ../sass/modules/landingPage/_footer.scss */
   footer .info-footer .contact-footer li:last-child, footer .info-footer .contact-footer li:nth-child(2) {
     border-left: none;
+  }
+}
+/* line 1, ../sass/modules/_appointmentPage.scss */
+.appointment-wrapper {
+  padding-top: 100px;
+}
+/* line 4, ../sass/modules/_appointmentPage.scss */
+.appointment-wrapper .appointment-form-container {
+  padding-top: 30px;
+}
+/* line 7, ../sass/modules/_appointmentPage.scss */
+.appointment-wrapper .appointment-form-container h3 {
+  text-align: center;
+  color: #804097;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+/* line 14, ../sass/modules/_appointmentPage.scss */
+.appointment-wrapper .appointment-form-container .appointment-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/* line 20, ../sass/modules/_appointmentPage.scss */
+.appointment-wrapper .appointment-form-container .appointment-form .input-grp {
+  width: calc(100% - 20px);
+  margin-bottom: 20px;
+  position: relative;
+}
+/* line 25, ../sass/modules/_appointmentPage.scss */
+.appointment-wrapper .appointment-form-container .appointment-form .input-grp.half-width {
+  width: calc(50% - 10px);
+}
+/* line 29, ../sass/modules/_appointmentPage.scss */
+.appointment-wrapper .appointment-form-container .appointment-form .input-grp input,
+.appointment-wrapper .appointment-form-container .appointment-form .input-grp textarea,
+.appointment-wrapper .appointment-form-container .appointment-form .input-grp select {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  margin-top: 5px;
+  width: 100%;
+  height: 45px;
+  padding: 0 10px;
+  font-size: 18px;
+  border: 1px solid #804097;
+  border-radius: 3px;
+  background: transparent;
+}
+/* line 43, ../sass/modules/_appointmentPage.scss */
+.appointment-wrapper .appointment-form-container .appointment-form .input-grp.visit-reason {
+  width: 100%;
+}
+/* line 47, ../sass/modules/_appointmentPage.scss */
+.appointment-wrapper .appointment-form-container .appointment-form .input-grp.textarea {
+  width: 100%;
+}
+/* line 50, ../sass/modules/_appointmentPage.scss */
+.appointment-wrapper .appointment-form-container .appointment-form .input-grp.textarea textarea {
+  height: 139px;
+  resize: none;
+  padding: 10px;
+}
+/* line 57, ../sass/modules/_appointmentPage.scss */
+.appointment-wrapper .appointment-form-container .appointment-form .input-grp span {
+  width: 100%;
+  height: 45px;
+}
+/* line 61, ../sass/modules/_appointmentPage.scss */
+.appointment-wrapper .appointment-form-container .appointment-form .input-grp span input,
+.appointment-wrapper .appointment-form-container .appointment-form .input-grp span select {
+  padding-right: 35px;
+}
+/* line 66, ../sass/modules/_appointmentPage.scss */
+.appointment-wrapper .appointment-form-container .appointment-form .input-grp span select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+/* line 71, ../sass/modules/_appointmentPage.scss */
+.appointment-wrapper .appointment-form-container .appointment-form .input-grp span:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  color: #804097;
+  font-size: 20px;
+  position: absolute;
+  top: calc(50% + 3px);
+  right: 10px;
+}
+/* line 81, ../sass/modules/_appointmentPage.scss */
+.appointment-wrapper .appointment-form-container .appointment-form .input-grp span.first-name::after, .appointment-wrapper .appointment-form-container .appointment-form .input-grp span.last-name::after {
+  content: "\f007";
+}
+/* line 86, ../sass/modules/_appointmentPage.scss */
+.appointment-wrapper .appointment-form-container .appointment-form .input-grp span.email::after {
+  content: "\f0e0";
+  font-family: "Font Awesome 5 Free";
+}
+/* line 90, ../sass/modules/_appointmentPage.scss */
+.appointment-wrapper .appointment-form-container .appointment-form .input-grp span.phone::after {
+  content: "\f095";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+}
+/* line 95, ../sass/modules/_appointmentPage.scss */
+.appointment-wrapper .appointment-form-container .appointment-form .input-grp span.date::after {
+  content: "\f073";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+}
+/* line 100, ../sass/modules/_appointmentPage.scss */
+.appointment-wrapper .appointment-form-container .appointment-form .input-grp span.time::after {
+  content: "\f017";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+}
+/* line 108, ../sass/modules/_appointmentPage.scss */
+.appointment-wrapper .appointment-form-container .appointment-form .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+/* line 115, ../sass/modules/_appointmentPage.scss */
+.appointment-wrapper .appointment-form-container .appointment-form .button-container {
+  grid-column: 1/3;
+  text-align: center;
+}
+/* line 119, ../sass/modules/_appointmentPage.scss */
+.appointment-wrapper .appointment-form-container .appointment-form .button-container button {
+  width: 50%;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+/* line 124, ../sass/modules/_appointmentPage.scss */
+.appointment-wrapper .appointment-form-container .appointment-form .button-container a {
+  color: #804097;
+  display: block;
+}
+/* line 128, ../sass/modules/_appointmentPage.scss */
+.appointment-wrapper .appointment-form-container .appointment-form .button-container a:hover {
+  color: #623173;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 139, ../sass/modules/_appointmentPage.scss */
+  .appointment-wrapper .appointment-form-container .appointment-form .input-grp {
+    width: 100%;
+  }
+  /* line 143, ../sass/modules/_appointmentPage.scss */
+  .appointment-wrapper .appointment-form-container .appointment-form .wrapper {
+    grid-column: 1/3;
+  }
+  /* line 148, ../sass/modules/_appointmentPage.scss */
+  .appointment-wrapper .appointment-form-container .appointment-form .button-container button {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  /* line 157, ../sass/modules/_appointmentPage.scss */
+  .appointment-wrapper .appointment-form-container .appointment-form .input-grp {
+    width: 100%;
+  }
+  /* line 160, ../sass/modules/_appointmentPage.scss */
+  .appointment-wrapper .appointment-form-container .appointment-form .input-grp.half-width {
+    width: 100%;
+  }
+  /* line 165, ../sass/modules/_appointmentPage.scss */
+  .appointment-wrapper .appointment-form-container .appointment-form .wrapper {
+    grid-column: 1/3;
   }
 }

@@ -8,11 +8,14 @@
 
 //modules
 //primary
-@import "modules/header";
-@import "modules/banner";
-@import "modules/about";
-@import "modules/services";
-@import "modules/doctors";
-@import "modules/testimonials";
-@import "modules/contact";
-@import "modules/footer";
+@import "modules/landingPage/header";
+@import "modules/landingPage/banner";
+@import "modules/landingPage/about";
+@import "modules/landingPage/services";
+@import "modules/landingPage/doctors";
+@import "modules/landingPage/testimonials";
+@import "modules/landingPage/contact";
+@import "modules/landingPage/footer";
+
+//secondary
+@import "modules/appointmentPage";

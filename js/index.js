@@ -22,6 +22,11 @@ function headerAnim() {
   },
   headerAnimOptions);
 
+  if (typeof banner == "undefined" && banner == null) {
+    header.classList.add("hide-top-headaer");
+    return;
+  }
+
   headerAnimObserver.observe(banner);
 }
 

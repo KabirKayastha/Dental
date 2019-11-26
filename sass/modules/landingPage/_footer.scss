@@ -2,6 +2,7 @@ footer {
   @include nunitoLight;
   margin-top: 30px;
   //   padding: 0 60px;
+  padding-top: 15px;
   background-color: $secondary-color;
   display: flex;
   flex-direction: column;
@@ -23,7 +24,7 @@ footer {
     display: flex;
     justify-content: center;
     font-size: 14px;
-    padding: 15px 0;
+    padding-bottom: 15px;
     border-bottom: 1px solid transparentize(#fff, $amount: 0.6);
     margin-bottom: 30px;
     width: 60%;
