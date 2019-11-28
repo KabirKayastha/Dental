@@ -1,7 +1,7 @@
 //header animation
 const header = document.getElementsByTagName("header")[0];
 function headerAnim() {
-  const banner = document.getElementsByClassName("banner")[0];
+  const observer = document.getElementsByClassName("header-observer")[0];
 
   let headerAnimOptions = {
     rootMargin: `-${header.clientHeight}px 0px 0px  0px`
@@ -22,12 +22,12 @@ function headerAnim() {
   },
   headerAnimOptions);
 
-  if (typeof banner == "undefined" && banner == null) {
+  if (typeof observer == "undefined" && observer == null) {
     header.classList.add("hide-top-headaer");
     return;
   }
 
-  headerAnimObserver.observe(banner);
+  headerAnimObserver.observe(observer);
 }
 
 if (!header.classList.contains("no-anim")) {

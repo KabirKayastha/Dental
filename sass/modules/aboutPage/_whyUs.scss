@@ -1,0 +1,47 @@
+.why-us {
+  background-color: #eee;
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .grid-item {
+      width: 200px;
+      margin: 30px;
+      margin-bottom: 0;
+    }
+
+    .thumb {
+      width: 100%;
+      height: 200px;
+      background-color: #fff;
+      //   background-color: transparentize($secondary-color, $amount: 0.85);
+      border-radius: 5px;
+      border: 2px solid #ddd;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      i {
+        font-size: 60px;
+        color: $primary-color;
+      }
+    }
+
+    .caption {
+      text-align: center;
+      margin-top: 15px;
+      text-transform: capitalize;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .why-us {
+    .wrapper {
+      .grid-item {
+        margin: 30px 15px;
+      }
+    }
+  }
+}

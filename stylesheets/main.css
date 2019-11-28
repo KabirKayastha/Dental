@@ -1263,3 +1263,117 @@ footer .copy-right {
     grid-column: 1/3;
   }
 }
+/* line 1, ../sass/modules/aboutPage/_aboutUs.scss */
+.about-banner {
+  width: 100%;
+  height: 80vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* line 9, ../sass/modules/aboutPage/_aboutUs.scss */
+.sec-about .wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 40px;
+}
+/* line 18, ../sass/modules/aboutPage/_aboutUs.scss */
+.sec-about .wrapper .sub-content {
+  margin-bottom: 30px;
+}
+/* line 22, ../sass/modules/aboutPage/_aboutUs.scss */
+.sec-about .wrapper .sub-title {
+  border-left: 3px solid #804097;
+  padding: 5px 15px;
+}
+/* line 26, ../sass/modules/aboutPage/_aboutUs.scss */
+.sec-about .wrapper p {
+  text-align: justify;
+  margin-top: 20px;
+}
+/* line 30, ../sass/modules/aboutPage/_aboutUs.scss */
+.sec-about .wrapper p em {
+  color: #9c54b6;
+}
+/* line 36, ../sass/modules/aboutPage/_aboutUs.scss */
+.sec-about .about-img-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/* line 41, ../sass/modules/aboutPage/_aboutUs.scss */
+.sec-about .about-img-container .img-container {
+  height: 400px;
+  width: calc(50% - 15px);
+  overflow: hidden;
+}
+/* line 47, ../sass/modules/aboutPage/_aboutUs.scss */
+.sec-about .about-img-container img {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 59, ../sass/modules/aboutPage/_aboutUs.scss */
+  .sec-about .wrapper .about-content {
+    grid-column: 1/3;
+  }
+  /* line 63, ../sass/modules/aboutPage/_aboutUs.scss */
+  .sec-about .wrapper .mission-content {
+    grid-column: 1/3;
+  }
+  /* line 69, ../sass/modules/aboutPage/_aboutUs.scss */
+  .sec-about .about-img-container .img-container {
+    width: 100%;
+    height: 50vw;
+    margin-bottom: 15px;
+  }
+}
+/* line 1, ../sass/modules/aboutPage/_whyUs.scss */
+.why-us {
+  background-color: #eee;
+}
+/* line 3, ../sass/modules/aboutPage/_whyUs.scss */
+.why-us .wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/* line 8, ../sass/modules/aboutPage/_whyUs.scss */
+.why-us .wrapper .grid-item {
+  width: 200px;
+  margin: 30px;
+  margin-bottom: 0;
+}
+/* line 14, ../sass/modules/aboutPage/_whyUs.scss */
+.why-us .wrapper .thumb {
+  width: 100%;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 2px solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 25, ../sass/modules/aboutPage/_whyUs.scss */
+.why-us .wrapper .thumb i {
+  font-size: 60px;
+  color: #804097;
+}
+/* line 31, ../sass/modules/aboutPage/_whyUs.scss */
+.why-us .wrapper .caption {
+  text-align: center;
+  margin-top: 15px;
+  text-transform: capitalize;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 42, ../sass/modules/aboutPage/_whyUs.scss */
+  .why-us .wrapper .grid-item {
+    margin: 30px 15px;
+  }
+}
