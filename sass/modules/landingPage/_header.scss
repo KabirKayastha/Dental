@@ -117,9 +117,34 @@ header {
     .nav-items {
       display: flex;
       justify-content: space-between;
+
       li {
         text-transform: uppercase;
         padding: 0 20px;
+        position: relative;
+
+        &:hover {
+          .sub-menu {
+            display: block;
+          }
+        }
+
+        .sub-menu {
+          display: none;
+          width: 150px;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          background: #ccc;
+
+          li {
+            padding: 10px 15px;
+
+            &:hover {
+              background: #aaa;
+            }
+          }
+        }
 
         &.appointment-nav {
           padding-right: 0;
@@ -209,14 +234,29 @@ header {
         grid-column: 1/3;
         width: 100%;
         flex-direction: column;
-        justify-content: center;
+        // justify-content: center;
         text-align: center;
-        overflow: hidden;
+        overflow-y: auto;
         height: 0px;
         transition: height 0.3s ease-in-out;
 
         li {
           padding: 10px 0;
+
+          &:hover {
+            .sub-menu {
+              height: 132px;
+            }
+          }
+
+          .sub-menu {
+            display: block;
+            width: 100%;
+            position: static;
+            height: 0px;
+            overflow: hidden;
+            transition: height 0.3s ease-in-out;
+          }
 
           &:hover {
             background-color: #aaa;

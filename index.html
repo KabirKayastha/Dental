@@ -85,11 +85,13 @@
 
       <nav>
         <div class="logo-container">
-          <img
+          <a href="index.html">
+            <img
             src="./images/Hanson-Dental-Logo-300.png"
             alt="dental health logo"
             class="logo"
-          />
+            />
+          </a>
         </div>
 
         <div class="nav-toggler">
@@ -98,11 +100,20 @@
 
         <ul class="nav-items">
           <li><a href="#">home</a></li>
-          <li><a href="#">about</a></li>
-          <li><a href="#">services</a></li>
-          <li><a href="#">gallery</a></li>
-          <li><a href="#">contact</a></li>
-          <li class="appointment-nav"><a href="#">appointment</a></li>
+          <li>
+            <a>about</a>
+
+            <ul class="sub-menu">
+              <li><a href="about.html">About us</a></li>
+              <li><a href="about.html#whyUs">Why us</a></li>
+              <li><a href="about.html#doctorsAbout">our team</a></li>
+            </ul>
+          </li>
+
+          <li><a href="services.html">services</a></li>
+          <li><a href="gallery.html">gallery</a></li>
+          <li><a href="#contactSection">contact</a></li>
+          <li class="appointment-nav"><a href="appointment.html">appointment</a></li>
         </ul>
       </nav>
     </header>
@@ -130,7 +141,11 @@
 
       <div class="slogan-container">
         <h1 class="banner-slogan">Healthy Teeth For Beautiful Smile</h1>
-        <button class="primary-button">request appointment</button>
+        <a href="appointment.html">
+        <button class="primary-button">
+            request appointment
+          </button>
+        </a>
       </div>
 
       <div class="button-container">
@@ -145,9 +160,9 @@
     <!-- /banner -->
 
     <!-- about-us -->
-    <section class="about" id="about">
+    <section class="about" id="aboutSection">
       <div class="img-container about-img">
-        <img src="./images/about-img-1.jpg" alt="about-img" />
+        <img data-src="./images/about-img-1.jpg" alt="about-img" />
       </div>
 
       <div class="about-desc-container">
@@ -179,7 +194,7 @@
     <!-- /about-us -->
 
     <!-- services -->
-    <section class="services" id="services">
+    <section class="services" id="services" id="serviceSection">
       <h3 class="section-title">we provide</h3>
       <p class="section-desc">
         Prevention is key to lifelong dental health. But know that it’s never
@@ -192,7 +207,7 @@
         <div class="grid-card service-card">
           <div class="img-container grid-img-container">
             <img
-              src="./images/service-img-1.jpg"
+              data-src="./images/service-img-1.jpg"
               alt="service img"
               class="grid-img"
             />
@@ -203,7 +218,7 @@
         <div class="grid-card service-card">
           <div class="img-container grid-img-container">
             <img
-              src="./images/service-img-2.jpg"
+              data-src="./images/service-img-2.jpg"
               alt="service-img"
               class="grid-img"
             />
@@ -214,7 +229,7 @@
         <div class="grid-card service-card">
           <div class="img-container grid-img-container">
             <img
-              src="./images/service-img-3.jpg"
+              data-src="./images/service-img-3.jpg"
               alt="service-img"
               class="grid-img"
             />
@@ -225,7 +240,7 @@
         <div class="grid-card service-card">
           <div class="img-container grid-img-container">
             <img
-              src="./images/service-img-4.jpg"
+              data-src="./images/service-img-4.jpg"
               alt="service-img"
               class="grid-img"
             />
@@ -245,7 +260,7 @@
     <!-- /services -->
 
     <!-- doctors -->
-    <section class="doctors" id="doctors">
+    <section class="doctors" id="doctors" id="doctorSection">
       <h3 class="section-title">Meet our doctors</h3>
       <p class="section-desc">
         Prevention is key to lifelong dental health. But know that it’s never
@@ -358,9 +373,8 @@
     </section>
     <!-- /doctors -->
 
-    
     <!-- smile gallery -->
-    <section class="smile-gallery">
+    <section class="smile-gallery" id="smileGallery">
       <h2 class="section-title">Our Smile Transformation</h2>
       <p class="section-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio numquam illum excepturi quas magni, saepe dicta aliquid laudantium porro eligendi.</p>
 
@@ -368,11 +382,11 @@
         <div class="grid-item grid-item-1">
           <div class="img-container-wrapper">
             <div class="before img-container" data-overlay="before">
-              <img src="./images/service-img-4.jpg" alt=" ">
+              <img data-src="./images/service-img-4.jpg" alt=" ">
             </div>
 
             <div class="after img-container"  data-overlay="after">
-              <img src="./images/service-img-1.jpg" alt=" ">
+              <img data-src="./images/service-img-1.jpg" alt=" ">
             </div>
           </div>
         </div>
@@ -380,20 +394,19 @@
         <div class="grid-item grid-item-2">
           <div class="img-container-wrapper">
             <div class="before img-container"  data-overlay="before">
-              <img src="./images/service-img-3.jpg" alt=" ">
+              <img data-src="./images/service-img-3.jpg" alt=" ">
             </div>
             
             <div class="after img-container"  data-overlay="after">
-              <img src="./images/service-img-2.jpg" alt=" ">
+              <img data-src="./images/service-img-2.jpg" alt=" ">
             </div>
           </div>
         </div>
     </section>
     <!-- smile gallery -->
 
-
     <!-- testimonials -->
-    <section class="testimonials">
+    <section class="testimonials" id="testimonialSection">
       <h3 class="section-title">What our clients say?</h3>
       
       <div class="owl-carousel owl-theme">
@@ -476,7 +489,7 @@
     <!-- /testimonials -->
 
     <!-- contact -->
-    <section class="contact">
+    <section class="contact" id="contactSection">
       <h3 class="section-title">contact us</h3>
       <p class="section-desc">Fill out the form below and we will contact you during our working hours.</p>
 
@@ -517,30 +530,48 @@
 
           <div class="button-container">
             <button class="primary-button" type="submit">Send</button>
-            <a href="#">Request Appointment</a>
+            <a href="appointment.html">Request Appointment</a>
           </div>
         </form>
       </div>
     </section>
     <!-- contact -->
 
+    <!-- map -->
+    <div class="map-container" id="mapContainer">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d19980.711052963412!2d85.34680516370818!3d27.713455315166257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d27.665926!2d85.4212799!4m5!1s0x39eb19b9c6ab9eb3%3A0x8d7f6d1ef74ad53a!2sOm%20Chabahil%20Dental%20Pvt.%20Ltd.%2C%20Kathmandu%2044600!3m2!1d27.718407499999998!2d85.3470018!5e0!3m2!1sen!2snp!4v1574917760940!5m2!1sen!2snp"
+        frameborder="0"
+        style="border:0;"
+        allowfullscreen=""
+      >
+      </iframe>
+    </div>
+    <!-- map -->
+
     <!-- footer -->
     <footer>
       <ul class="page-nav">
         <li>
-          <a href="#">about</a>
+          <a href="#">home</a>
         </li>
         <li>
-          <a href="#">Services</a>
+          <a href="#aboutSection">about</a>
         </li>
         <li>
-          <a href="#">doctors</a>
+          <a href="#serviceSection">Services</a>
         </li>
         <li>
-          <a href="#">testimonials</a>
+          <a href="#doctorSection">doctors</a>
         </li>
         <li>
-          <a href="#">contact</a>
+          <a href="#smileGallery">smile gallery</a>
+        </li>
+        <li>
+          <a href="#testimonialSection">testimonials</a>
+        </li>
+        <li>
+          <a href="#contactSection">contact</a>
         </li>
       </ul>
 

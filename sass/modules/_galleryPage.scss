@@ -1,0 +1,128 @@
+.gallery-container {
+  padding-top: $secondary-padding-top;
+
+  .wrapper {
+    // display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    justify-content: space-between;
+    // flex-wrap: wrap;
+
+    .img-container {
+      height: 200px;
+      border-radius: 3px;
+      position: relative;
+      overflow: hidden;
+      margin: 5px 0px;
+      background-color: #eee;
+
+      &:hover {
+        .caption {
+          transform: translateY(0);
+        }
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        cursor: pointer;
+      }
+
+      .caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 5px 10px;
+        background: $primary-color-dark;
+        background-color: transparentize($primary-color-dark, $amount: 0.4);
+        color: $text-light;
+        transform: translateY(100%);
+        transition: transform 0.5s ease-in-out;
+      }
+    }
+  }
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: transparentize(#333, $amount: 0.01);
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  color: #fff;
+  padding: $section-padding;
+  padding-bottom: 90px;
+  text-align: center;
+
+  .lightbox-caption {
+    padding: 5px 0;
+  }
+
+  .img-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  .button-container {
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto 0 auto;
+
+    button {
+      color: $text-light;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+
+      &:before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 700;
+        font-size: 30px;
+      }
+
+      &.next::before {
+        content: "\f105";
+      }
+
+      &.prev::before {
+        content: "\f104";
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .gallery-container {
+    padding-top: 120px;
+    .wrapper {
+      grid-template-columns: repeat(auto-fit, 300px);
+      justify-content: space-evenly;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .gallery-container .wrapper {
+    grid-template-columns: repeat(auto-fit, 100%);
+
+    .img-container {
+      height: auto;
+    }
+  }
+}
