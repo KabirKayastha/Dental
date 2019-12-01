@@ -131,19 +131,36 @@ section {
   margin: 0 auto;
 }
 
+/* line 119, ../sass/base/_base.scss */
+.slide {
+  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
+}
+
+/* line 123, ../sass/base/_base.scss */
+.slide-left {
+  opacity: 0;
+  transform: translateX(50%);
+}
+
+/* line 128, ../sass/base/_base.scss */
+.slide-right {
+  opacity: 0;
+  transform: translateX(-50%);
+}
+
 @media only screen and (max-width: 1024px) {
-  /* line 120, ../sass/base/_base.scss */
+  /* line 134, ../sass/base/_base.scss */
   section {
     padding: 15px 30px;
   }
 
-  /* line 123, ../sass/base/_base.scss */
+  /* line 137, ../sass/base/_base.scss */
   .section-desc {
     width: 100%;
   }
 }
 @media only screen and (max-width: 501px) {
-  /* line 129, ../sass/base/_base.scss */
+  /* line 143, ../sass/base/_base.scss */
   section {
     padding: 15px 15px;
   }
@@ -1514,6 +1531,237 @@ footer .copy-right {
   /* line 124, ../sass/modules/_galleryPage.scss */
   .gallery-container .wrapper .img-container {
     height: auto;
+  }
+}
+/* line 1, ../sass/modules/_doctorPage.scss */
+.doctor-container {
+  width: 80%;
+  background: #f6f6f6;
+  border: 2px solid #eee;
+  border-radius: 3px;
+  margin: 0 auto;
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  align-items: center;
+}
+/* line 12, ../sass/modules/_doctorPage.scss */
+.doctor-container .profile-thumb {
+  height: 350px;
+  border-radius: 5px;
+  overflow: hidden;
+  grid-row: 1/4;
+}
+/* line 19, ../sass/modules/_doctorPage.scss */
+.doctor-container .profile-thumb img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+/* line 27, ../sass/modules/_doctorPage.scss */
+.doctor-container .identity {
+  grid-column: 2/3;
+  border-bottom: 2px solid #804097;
+  padding: 5px 0px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 7.5px;
+  margin-left: 30px;
+}
+/* line 39, ../sass/modules/_doctorPage.scss */
+.doctor-container .identity .doctor-name {
+  font-size: 30px;
+  text-transform: capitalize;
+}
+/* line 45, ../sass/modules/_doctorPage.scss */
+.doctor-container .identity .post {
+  text-transform: uppercase;
+  color: #777;
+}
+/* line 50, ../sass/modules/_doctorPage.scss */
+.doctor-container .identity .contact-links {
+  text-align: right;
+}
+/* line 53, ../sass/modules/_doctorPage.scss */
+.doctor-container .identity .contact-links i {
+  color: #804097;
+  font-size: 18px;
+  margin-left: 5px;
+}
+/* line 58, ../sass/modules/_doctorPage.scss */
+.doctor-container .identity .contact-links i.fa-linkedin-in {
+  font-size: 20px;
+}
+/* line 63, ../sass/modules/_doctorPage.scss */
+.doctor-container .identity .contact-links .phone {
+  margin-top: 5px;
+  letter-spacing: 1px;
+  color: #777;
+}
+/* line 71, ../sass/modules/_doctorPage.scss */
+.doctor-container .degree {
+  grid-column: 2/3;
+  color: #777;
+  margin-left: 30px;
+  letter-spacing: 1px;
+}
+/* line 78, ../sass/modules/_doctorPage.scss */
+.doctor-container .desc {
+  grid-column: 2/3;
+  font-size: 22px;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+/* line 84, ../sass/modules/_doctorPage.scss */
+.doctor-container .doctor-desc-container {
+  margin-left: 15px;
+  padding: 0 15px;
+}
+
+/* line 90, ../sass/modules/_doctorPage.scss */
+.other-doctors {
+  width: 90%;
+  margin: 0 auto;
+}
+/* line 93, ../sass/modules/_doctorPage.scss */
+.other-doctors .wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  justify-content: space-between;
+}
+/* line 98, ../sass/modules/_doctorPage.scss */
+.other-doctors .wrapper .grid-items {
+  text-align: center;
+  background-color: #f6f6f6;
+  border: 2px solid #eee;
+  padding: 7.5px;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+/* line 107, ../sass/modules/_doctorPage.scss */
+.other-doctors .wrapper .thumb {
+  height: calc(250px - 15px);
+  overflow: hidden;
+  border-radius: 5px;
+  margin-bottom: 7.5px;
+}
+/* line 112, ../sass/modules/_doctorPage.scss */
+.other-doctors .wrapper .thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+/* line 120, ../sass/modules/_doctorPage.scss */
+.other-doctors .wrapper .name {
+  text-transform: capitalize;
+}
+/* line 123, ../sass/modules/_doctorPage.scss */
+.other-doctors .wrapper .post {
+  text-transform: capitalize;
+  color: #777;
+}
+
+@media only screen and (max-width: 1024px) {
+  /* line 131, ../sass/modules/_doctorPage.scss */
+  .doctor-container {
+    width: calc(100% - 60px);
+  }
+
+  /* line 135, ../sass/modules/_doctorPage.scss */
+  .other-doctors {
+    width: calc(100% - 60px);
+  }
+  /* line 139, ../sass/modules/_doctorPage.scss */
+  .other-doctors .wrapper {
+    grid-template-columns: repeat(3, 250px);
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* line 146, ../sass/modules/_doctorPage.scss */
+  .doctor-container {
+    margin-top: 140px;
+    grid-template-columns: 200px 1fr;
+  }
+  /* line 150, ../sass/modules/_doctorPage.scss */
+  .doctor-container .profile-thumb {
+    grid-row: 1/3;
+    height: 200px;
+  }
+  /* line 156, ../sass/modules/_doctorPage.scss */
+  .doctor-container .identity {
+    flex-direction: column;
+    text-align: center;
+  }
+  /* line 160, ../sass/modules/_doctorPage.scss */
+  .doctor-container .identity .info {
+    margin-bottom: 10px;
+  }
+  /* line 164, ../sass/modules/_doctorPage.scss */
+  .doctor-container .identity .contact-links {
+    text-align: center;
+  }
+  /* line 167, ../sass/modules/_doctorPage.scss */
+  .doctor-container .identity .contact-links i {
+    margin: 0 7px;
+  }
+  /* line 173, ../sass/modules/_doctorPage.scss */
+  .doctor-container .degree {
+    text-align: center;
+  }
+  /* line 177, ../sass/modules/_doctorPage.scss */
+  .doctor-container .desc {
+    grid-column: 1/3;
+    margin-left: 0;
+  }
+
+  /* line 183, ../sass/modules/_doctorPage.scss */
+  .other-doctors {
+    width: 100%;
+  }
+  /* line 186, ../sass/modules/_doctorPage.scss */
+  .other-doctors .wrapper {
+    grid-template-columns: repeat(2, 330px);
+  }
+  /* line 189, ../sass/modules/_doctorPage.scss */
+  .other-doctors .wrapper .thumb {
+    height: calc(330px - 15px);
+  }
+}
+@media only screen and (max-width: 500px) {
+  /* line 197, ../sass/modules/_doctorPage.scss */
+  .doctor-container {
+    margin-top: 100px;
+    width: calc(100% - 10px);
+  }
+  /* line 201, ../sass/modules/_doctorPage.scss */
+  .doctor-container .profile-thumb {
+    grid-column: 1/3;
+    height: 100vw;
+  }
+  /* line 206, ../sass/modules/_doctorPage.scss */
+  .doctor-container .identity {
+    grid-column: 1/3;
+    margin-top: 15px;
+    margin-left: 0;
+  }
+  /* line 212, ../sass/modules/_doctorPage.scss */
+  .doctor-container .degree {
+    grid-column: 1/3;
+    margin-left: 0;
+  }
+
+  /* line 219, ../sass/modules/_doctorPage.scss */
+  .other-doctors .wrapper {
+    grid-template-columns: 100%;
+    justify-content: center;
+  }
+  /* line 223, ../sass/modules/_doctorPage.scss */
+  .other-doctors .wrapper .thumb {
+    height: 100vw;
   }
 }
 /* line 1, ../sass/modules/aboutPage/_aboutUs.scss */

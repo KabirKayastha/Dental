@@ -171,3 +171,38 @@ lazyLoadOptions);
 lazyImages.forEach(lazyImage => {
   lazyLoadObserver.observe(lazyImage);
 });
+
+//slide animations
+let slideTargets = document.querySelectorAll(".slide");
+
+function slideAnim() {
+  let slideOptions = {
+    rootMargin: "0px 0px -100px 0px"
+  };
+
+  let slideObserver = new IntersectionObserver(function(
+    entries,
+    slideObserver
+  ) {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) {
+        return;
+      }
+
+      if (entry.target.classList.contains("slide-left")) {
+        entry.target.classList.remove("slide-left");
+      } else if (entry.target.classList.contains("slide-right")) {
+        entry.target.classList.remove("slide-right");
+      }
+
+      slideObserver.unobserve(entry.target);
+    });
+  },
+  slideOptions);
+
+  slideTargets.forEach(slideTarget => {
+    slideObserver.observe(slideTarget);
+  });
+}
+
+slideAnim();

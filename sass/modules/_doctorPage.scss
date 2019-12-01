@@ -1,0 +1,228 @@
+.doctor-container {
+  width: 80%;
+  background: #f6f6f6;
+  border: 2px solid #eee;
+  border-radius: 3px;
+  margin: 0 auto;
+  margin-top: $secondary-padding-top;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  align-items: center;
+
+  .profile-thumb {
+    height: 350px;
+    border-radius: 5px;
+    overflow: hidden;
+    grid-row: 1/4;
+    // margin-right: 30px;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  .identity {
+    grid-column: 2/3;
+    border-bottom: 2px solid $primary-color;
+    padding: 5px 0px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 7.5px;
+    margin-left: 30px;
+    //   background: rosybrown;
+
+    .doctor-name {
+      font-size: 30px;
+      text-transform: capitalize;
+      //   color: $primary-color;
+    }
+
+    .post {
+      text-transform: uppercase;
+      color: $text-gray;
+    }
+
+    .contact-links {
+      text-align: right;
+
+      i {
+        color: $primary-color;
+        font-size: 18px;
+        margin-left: 5px;
+
+        &.fa-linkedin-in {
+          font-size: 20px;
+        }
+      }
+
+      .phone {
+        margin-top: 5px;
+        letter-spacing: 1px;
+        color: $text-gray;
+      }
+    }
+  }
+
+  .degree {
+    grid-column: 2/3;
+    color: $text-gray;
+    margin-left: 30px;
+    letter-spacing: 1px;
+  }
+
+  .desc {
+    grid-column: 2/3;
+    font-size: 22px;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  .doctor-desc-container {
+    margin-left: 15px;
+    padding: 0 15px;
+  }
+}
+
+.other-doctors {
+  width: 90%;
+  margin: 0 auto;
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    justify-content: space-between;
+
+    .grid-items {
+      text-align: center;
+      background-color: #f6f6f6;
+      border: 2px solid #eee;
+      padding: 7.5px;
+      border-radius: 5px;
+      margin-top: 30px;
+    }
+
+    .thumb {
+      height: calc(250px - 15px);
+      overflow: hidden;
+      border-radius: 5px;
+      margin-bottom: 7.5px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+
+    .name {
+      text-transform: capitalize;
+    }
+    .post {
+      text-transform: capitalize;
+      color: $text-gray;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .doctor-container {
+    width: calc(100% - 60px);
+  }
+
+  .other-doctors {
+    width: calc(100% - 60px);
+    // padding: 0;
+
+    .wrapper {
+      grid-template-columns: repeat(3, 250px);
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .doctor-container {
+    margin-top: 140px;
+    grid-template-columns: 200px 1fr;
+
+    .profile-thumb {
+      grid-row: 1/3;
+      //   grid-column: 1/3;
+      height: 200px;
+    }
+
+    .identity {
+      flex-direction: column;
+      text-align: center;
+
+      .info {
+        margin-bottom: 10px;
+      }
+
+      .contact-links {
+        text-align: center;
+
+        i {
+          margin: 0 7px;
+        }
+      }
+    }
+
+    .degree {
+      text-align: center;
+    }
+
+    .desc {
+      grid-column: 1/3;
+      margin-left: 0;
+    }
+  }
+
+  .other-doctors {
+    width: 100%;
+
+    .wrapper {
+      grid-template-columns: repeat(2, 330px);
+
+      .thumb {
+        height: calc(330px - 15px);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .doctor-container {
+    margin-top: 100px;
+    width: calc(100% - 10px);
+
+    .profile-thumb {
+      grid-column: 1/3;
+      height: 100vw;
+    }
+
+    .identity {
+      grid-column: 1/3;
+      margin-top: 15px;
+      margin-left: 0;
+    }
+
+    .degree {
+      grid-column: 1/3;
+      margin-left: 0;
+    }
+  }
+
+  .other-doctors {
+    .wrapper {
+      grid-template-columns: 100%;
+      justify-content: center;
+
+      .thumb {
+        height: 100vw;
+      }
+    }
+  }
+}
