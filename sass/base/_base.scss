@@ -12,6 +12,7 @@ html {
 body {
   @include nunitoReg;
   font-size: 18px;
+  overflow-x: hidden;
 }
 
 ul {
@@ -117,7 +118,7 @@ section {
 }
 
 .slide {
-  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 
 .slide-left {
@@ -136,6 +137,16 @@ section {
   }
   .section-desc {
     width: 100%;
+  }
+
+  .slide-left {
+    opacity: 0;
+    transform: translateX(0);
+  }
+
+  .slide-right {
+    opacity: 0;
+    transform: translateX(0);
   }
 }
 

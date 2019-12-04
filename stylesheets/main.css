@@ -17,14 +17,15 @@ body {
   font-family: "Nunito", sans-serif;
   font-weight: 400;
   font-size: 18px;
+  overflow-x: hidden;
 }
 
-/* line 17, ../sass/base/_base.scss */
+/* line 18, ../sass/base/_base.scss */
 ul {
   list-style-type: none;
 }
 
-/* line 21, ../sass/base/_base.scss */
+/* line 22, ../sass/base/_base.scss */
 h1,
 h2,
 h3,
@@ -34,18 +35,18 @@ h5 {
   font-weight: 500;
 }
 
-/* line 29, ../sass/base/_base.scss */
+/* line 30, ../sass/base/_base.scss */
 a {
   text-decoration: none;
   color: #000;
 }
-/* line 33, ../sass/base/_base.scss */
+/* line 34, ../sass/base/_base.scss */
 a:hover {
   text-decoration: none;
   color: #804097;
 }
 
-/* line 39, ../sass/base/_base.scss */
+/* line 40, ../sass/base/_base.scss */
 button {
   font-family: "Nunito", sans-serif;
   font-weight: 400;
@@ -53,13 +54,13 @@ button {
   outline: transparent;
 }
 
-/* line 45, ../sass/base/_base.scss */
+/* line 46, ../sass/base/_base.scss */
 label {
   text-transform: capitalize;
   font-weight: 400;
 }
 
-/* line 50, ../sass/base/_base.scss */
+/* line 51, ../sass/base/_base.scss */
 .primary-button {
   font-family: "Nunito", sans-serif;
   font-weight: 400;
@@ -72,17 +73,17 @@ label {
   border-radius: 5px;
   color: #fff;
 }
-/* line 61, ../sass/base/_base.scss */
+/* line 62, ../sass/base/_base.scss */
 .primary-button a {
   color: #fff;
 }
-/* line 65, ../sass/base/_base.scss */
+/* line 66, ../sass/base/_base.scss */
 .primary-button:hover {
   background-color: #623173;
   color: #fff;
 }
 
-/* line 71, ../sass/base/_base.scss */
+/* line 72, ../sass/base/_base.scss */
 .secondary-button {
   padding: 10px 15px;
   background-color: transparent;
@@ -93,27 +94,27 @@ label {
   color: #804097;
   cursor: pointer;
 }
-/* line 81, ../sass/base/_base.scss */
+/* line 82, ../sass/base/_base.scss */
 .secondary-button a {
   color: #804097;
 }
-/* line 85, ../sass/base/_base.scss */
+/* line 86, ../sass/base/_base.scss */
 .secondary-button:hover {
   background-color: #623173;
   border-color: #623173;
   color: #fff;
 }
-/* line 90, ../sass/base/_base.scss */
+/* line 91, ../sass/base/_base.scss */
 .secondary-button:hover a {
   color: #fff;
 }
 
-/* line 100, ../sass/base/_base.scss */
+/* line 101, ../sass/base/_base.scss */
 section {
   padding: 30px 60px;
 }
 
-/* line 104, ../sass/base/_base.scss */
+/* line 105, ../sass/base/_base.scss */
 .section-title {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -123,7 +124,7 @@ section {
   margin-bottom: 15px;
 }
 
-/* line 112, ../sass/base/_base.scss */
+/* line 113, ../sass/base/_base.scss */
 .section-desc {
   padding: 15px 0 30px 0;
   text-align: center;
@@ -131,36 +132,48 @@ section {
   margin: 0 auto;
 }
 
-/* line 119, ../sass/base/_base.scss */
+/* line 120, ../sass/base/_base.scss */
 .slide {
-  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 
-/* line 123, ../sass/base/_base.scss */
+/* line 124, ../sass/base/_base.scss */
 .slide-left {
   opacity: 0;
   transform: translateX(50%);
 }
 
-/* line 128, ../sass/base/_base.scss */
+/* line 129, ../sass/base/_base.scss */
 .slide-right {
   opacity: 0;
   transform: translateX(-50%);
 }
 
 @media only screen and (max-width: 1024px) {
-  /* line 134, ../sass/base/_base.scss */
+  /* line 135, ../sass/base/_base.scss */
   section {
     padding: 15px 30px;
   }
 
-  /* line 137, ../sass/base/_base.scss */
+  /* line 138, ../sass/base/_base.scss */
   .section-desc {
     width: 100%;
   }
+
+  /* line 142, ../sass/base/_base.scss */
+  .slide-left {
+    opacity: 0;
+    transform: translateX(0);
+  }
+
+  /* line 147, ../sass/base/_base.scss */
+  .slide-right {
+    opacity: 0;
+    transform: translateX(0);
+  }
 }
 @media only screen and (max-width: 501px) {
-  /* line 143, ../sass/base/_base.scss */
+  /* line 154, ../sass/base/_base.scss */
   section {
     padding: 15px 15px;
   }
@@ -1197,8 +1210,28 @@ footer .info-footer .footer-socials li i.fa-linkedin:hover {
   color: #0e76a8;
 }
 /* line 138, ../sass/modules/landingPage/_footer.scss */
+footer .button-container {
+  margin-top: 15px;
+}
+/* line 141, ../sass/modules/landingPage/_footer.scss */
+footer .button-container button {
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  padding: 7.5px 15px;
+}
+/* line 149, ../sass/modules/landingPage/_footer.scss */
+footer .button-container button a:before {
+  content: "\f303";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  margin-right: 5px;
+}
+/* line 158, ../sass/modules/landingPage/_footer.scss */
 footer .copy-right {
-  padding: 20px 0;
+  padding: 20px 15px;
   text-align: center;
   width: 100%;
   background: #242548;
@@ -1206,32 +1239,32 @@ footer .copy-right {
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 149, ../sass/modules/landingPage/_footer.scss */
+  /* line 169, ../sass/modules/landingPage/_footer.scss */
   footer .page-nav {
     width: 75%;
   }
 }
 @media only screen and (max-width: 500px) {
-  /* line 157, ../sass/modules/landingPage/_footer.scss */
+  /* line 177, ../sass/modules/landingPage/_footer.scss */
   footer .page-nav {
     padding-top: 20px;
     width: 100%;
     flex-wrap: wrap;
   }
-  /* line 162, ../sass/modules/landingPage/_footer.scss */
+  /* line 182, ../sass/modules/landingPage/_footer.scss */
   footer .page-nav li {
     margin-bottom: 5px;
   }
-  /* line 168, ../sass/modules/landingPage/_footer.scss */
+  /* line 188, ../sass/modules/landingPage/_footer.scss */
   footer .info-footer .contact-footer {
     flex-wrap: wrap;
   }
-  /* line 171, ../sass/modules/landingPage/_footer.scss */
+  /* line 191, ../sass/modules/landingPage/_footer.scss */
   footer .info-footer .contact-footer li {
     margin-bottom: 5px;
     padding: 0 7px;
   }
-  /* line 174, ../sass/modules/landingPage/_footer.scss */
+  /* line 194, ../sass/modules/landingPage/_footer.scss */
   footer .info-footer .contact-footer li:last-child, footer .info-footer .contact-footer li:nth-child(2) {
     border-left: none;
   }
@@ -1762,6 +1795,123 @@ footer .copy-right {
   /* line 223, ../sass/modules/_doctorPage.scss */
   .other-doctors .wrapper .thumb {
     height: 100vw;
+  }
+}
+/* line 1, ../sass/modules/_servicePage.scss */
+.service-container {
+  padding-top: 100px;
+}
+/* line 4, ../sass/modules/_servicePage.scss */
+.service-container .wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 380px);
+  margin-top: 60px;
+  justify-content: space-between;
+}
+/* line 10, ../sass/modules/_servicePage.scss */
+.service-container .wrapper .grid-item {
+  padding: 15px;
+  background: #eee;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  transition: all 0.3s ease-in-out;
+  border: 2px solid #ddd;
+}
+/* line 18, ../sass/modules/_servicePage.scss */
+.service-container .wrapper .grid-item:hover {
+  box-shadow: 0px 8px 16px -4px #aaa;
+  transform: translateY(-10px);
+}
+/* line 22, ../sass/modules/_servicePage.scss */
+.service-container .wrapper .grid-item:hover img {
+  filter: saturate(100%) contrast(90%);
+}
+/* line 25, ../sass/modules/_servicePage.scss */
+.service-container .wrapper .grid-item:hover .service-desc {
+  color: #000;
+}
+/* line 31, ../sass/modules/_servicePage.scss */
+.service-container .wrapper .card-thumb {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  border-radius: 3px;
+}
+/* line 38, ../sass/modules/_servicePage.scss */
+.service-container .wrapper .card-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: saturate(50%) contrast(90%);
+  transition: filter 0.3s ease-in-out;
+}
+/* line 48, ../sass/modules/_servicePage.scss */
+.service-container .wrapper .service-name {
+  color: #804097;
+  font-size: 20px;
+  margin-bottom: 3px;
+}
+/* line 54, ../sass/modules/_servicePage.scss */
+.service-container .wrapper .service-desc {
+  font-size: 16px;
+  color: #777;
+}
+
+@media only screen and (max-width: 1024px) {
+  /* line 63, ../sass/modules/_servicePage.scss */
+  .service-container .wrapper {
+    grid-template-columns: repeat(3, 300px);
+  }
+  /* line 66, ../sass/modules/_servicePage.scss */
+  .service-container .wrapper .grid-item {
+    padding: 7.5px;
+  }
+  /* line 69, ../sass/modules/_servicePage.scss */
+  .service-container .wrapper .grid-item:hover {
+    transform: translateY(0);
+    box-shadow: none;
+  }
+  /* line 73, ../sass/modules/_servicePage.scss */
+  .service-container .wrapper .grid-item:hover .service-desc {
+    color: #777;
+  }
+  /* line 76, ../sass/modules/_servicePage.scss */
+  .service-container .wrapper .grid-item:hover img {
+    filter: none;
+  }
+  /* line 82, ../sass/modules/_servicePage.scss */
+  .service-container .wrapper .card-thumb {
+    margin-bottom: 7.5px;
+  }
+  /* line 84, ../sass/modules/_servicePage.scss */
+  .service-container .wrapper .card-thumb img {
+    filter: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* line 93, ../sass/modules/_servicePage.scss */
+  .service-container {
+    padding-top: 140px;
+  }
+  /* line 96, ../sass/modules/_servicePage.scss */
+  .service-container .wrapper {
+    grid-template-columns: repeat(2, 330px);
+  }
+}
+@media only screen and (max-width: 500px) {
+  /* line 103, ../sass/modules/_servicePage.scss */
+  .service-container {
+    padding-top: 100px;
+  }
+  /* line 106, ../sass/modules/_servicePage.scss */
+  .service-container .wrapper {
+    grid-template-columns: 100%;
+  }
+  /* line 109, ../sass/modules/_servicePage.scss */
+  .service-container .wrapper .card-thumb {
+    height: 60vw;
   }
 }
 /* line 1, ../sass/modules/aboutPage/_aboutUs.scss */
